@@ -96,6 +96,7 @@ Each skill is a markdown file with clear instructions. Copy the content and past
 
 | Skill | Topic | Difficulty | Description |
 |-------|-------|------------|-------------|
+| [Reliability & Observability](./roles/systems-design/reliability-observability-interviewer.md) | Reliability | Medium-Hard | Circuit Breakers, RED Metrics, RTO/RPO, Retries |
 | Kubernetes Fundamentals | Infrastructure | Medium | Pods, services, deployments |
 | CI/CD Pipeline Design | DevOps | Medium | GitHub Actions, Jenkins, testing strategies |
 | Monitoring & Alerting | SRE | Medium | Prometheus, Grafana, SLIs/SLOs/SLAs |
