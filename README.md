@@ -282,47 +282,48 @@ The-Mentor/
 
 ## 🤝 Integrations
 
-### Claude Code
+### Claude Code (Native Skills Integration)
 
-Claude Code now natively supports "skills" via your configuration file. Add this to your `~/.claude/settings.json` (or your project's local `.claude.json`) to register The Mentor interviewers:
+Claude Code officially supports extending its capabilities via a **skills configuration file**. This is the recommended way to use The Mentor, as it integrates deeply with the CLI.
+
+**Step 1:** Create or edit the `~/.claude.json` file in your home directory (or use `.claude.json` in your project root).
+
+**Step 2:** Register the interviewers you want to practice with by adding them to the `skills` array. 
+
+Here is an example configuring a few different interview roles:
 
 ```json
 {
   "skills": [
     {
       "name": "interviewer-arrays",
-      "path": "/path/to/The-Mentor/roles/swe-i/arrays-hashmaps-interviewer.md",
+      "path": "/absolute/path/to/The-Mentor/roles/swe-i/arrays-hashmaps-interviewer.md",
       "description": "SWE-I Interviewer for Arrays & HashMaps"
     },
     {
       "name": "interviewer-sysdesign-uber",
-      "path": "/path/to/The-Mentor/roles/systems-design/uber-interviewer.md",
+      "path": "/absolute/path/to/The-Mentor/roles/systems-design/uber-interviewer.md",
       "description": "Senior System Design Interviewer (Uber/Ride-Sharing)"
+    },
+    {
+      "name": "interviewer-db-arch",
+      "path": "/absolute/path/to/The-Mentor/roles/systems-design/database-architecture-interviewer.md",
+      "description": "Principal Database Architecture Interviewer"
     }
-    // Add any other skills you wish to practice!
   ]
 }
 ```
 
-Once registered, you can simply open your terminal and say:
-> `claude "Use the interviewer-sysdesign-uber skill and start my mock interview."`
+**Step 3:** Start your mock interview! Open your terminal, run `claude`, and invoke the skill:
+> *"Load the interviewer-sysdesign-uber skill and begin my system design interview."*
 
-*Alternative (No config required):*
-You can pipe the skill directly into Claude Code from your terminal:
-```bash
-cat roles/systems-design/database-architecture-interviewer.md | claude "Adopt this persona and start my mock interview"
-```
+Claude will automatically read the corresponding skill file and adopt the persona, guiding you through the interview structure natively.
 
-### VS Code & Cursor
+### VS Code (Cline) & Cursor
 
-If you are using AI-powered IDEs like Cursor or VS Code (with GitHub Copilot Chat / Cline):
-1. Create a `system-design.md` file in your scratchpad.
-2. Paste the contents of the desired role (e.g., `rate-limiter-interviewer.md`).
-3. Tag the file in your chat (e.g., `@system-design.md`) and say: *"Read this file and adopt the persona. Begin the interview."*
-
-### Web Interfaces (ChatGPT / Claude.ai / Gemini)
-
-Each skill is standard Markdown. Simply copy the entire contents of the `.md` file and paste it as your first prompt in a new chat session. The AI will immediately adopt the persona and begin the interview.
+If you are using Agentic IDE tools like Cline or Cursor:
+1. Save the skill markdown file into a `.clinerules` directory or as a custom instruction file in your workspace.
+2. In your prompt, reference the file directly: *"Use the instructions in `@uber-interviewer.md` to conduct a mock interview with me."*
 
 ---
 
