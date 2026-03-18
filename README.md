@@ -1,104 +1,70 @@
 # The Interview Mentor
 
-**AI mock interviewers that push back on vague answers — just like real interviewers do.**
+**AI mock interviewers that don't let vague answers slide.**
 
-You know the algorithms. You've solved hundreds of LeetCode problems. But in a real interview, you say "I'd use a cache here" and the interviewer asks: *"What eviction policy? What's your TTL? What happens during a thundering herd?"* — and you freeze.
-
-The Interview Mentor is a collection of 40 open-source AI interviewer agents. Each one is an expert in a specific domain — system design, algorithms, data engineering, debugging, ML, behavioral — and they don't let shallow answers slide.
-
-**Works with Claude Code, ChatGPT, Claude.ai, Cursor, or any AI assistant.**
+40 open-source interviewer agents. System design, coding, data engineering, debugging, ML, behavioral. Works with ChatGPT, Claude, Cursor, or any AI.
 
 <p align="center">
-<a href="#try-it-in-60-seconds">Try it now</a> · <a href="#choose-your-path">Choose your path</a> · <a href="#all-40-skills">Browse all skills</a> · <a href="./CONTRIBUTING.md">Contribute</a>
+<a href="#try-it-now"><b>Try it now</b></a> · <a href="#choose-your-path">Choose your path</a> · <a href="#all-40-skills">All 40 skills</a> · <a href="./CONTRIBUTING.md">Contribute</a>
 </p>
 
 ---
 
-## What this actually feels like
+## See the difference
 
-Here's a real interaction with the Uber System Design interviewer:
+You say "I'd use a cache here." A normal chatbot says "Great idea!"
 
-> **Interviewer:** Walk me through the core user flows for an MVP ride-sharing platform — what does a rider do, what does a driver do, and where do those two paths intersect?
->
-> **You:** The rider opens the app, requests a ride, we find the nearest driver, they get matched, and the driver picks them up.
->
-> **Interviewer:** That's the happy path. But let me push on "find the nearest driver" — you have 1 million active drivers sending GPS pings every 4 seconds. That's 250,000 writes per second. How do you store and query that location data efficiently? A regular SQL database won't cut it.
->
-> **You:** We could use Redis?
->
-> **Interviewer:** Redis is a good starting point. But *how* do you query it spatially? If a rider is at coordinates (40.7, -74.0), you can't just scan all 1 million drivers. What data structure lets you find drivers within 2km without scanning everything?
->
-> **You:** ...geohashing?
->
-> **Interviewer:** Now we're getting somewhere. Walk me through how geohashing works and what happens when a rider is near the boundary of a geohash cell.
+The Interview Mentor says:
 
-**That's the difference.** This isn't a chatbot that asks you questions and says "great answer!" It finds the gaps in what you *think* you know.
+> **What eviction policy?** What's your TTL? What happens when the cache key expires and 5,000 requests hit your database simultaneously? Walk me through your thundering herd mitigation.
+
+It keeps pushing until it finds what you don't know — before a real interviewer does.
+
+**More examples:** [System Design](./examples/system-design-interview.md) · [Coding](./examples/coding-interview.md) · [Debugging](./examples/debugging-interview.md)
 
 ---
 
-## Try it in 60 seconds
+## Try it now
 
-### Option A: Copy-paste into any AI (no install needed)
+**No install. Works with ChatGPT, Claude, Gemini, or any AI.**
 
-This works with **ChatGPT, Claude.ai, Gemini, or any AI assistant**:
-
-1. Pick a skill from the [catalog below](#all-40-skills) and click the link
-2. Copy the entire SKILL.md content
-3. Paste it into your AI assistant as the first message
+1. Click a skill: [URL Shortener](./agents/systems-design/url-shortener-interviewer/SKILL.md) · [Arrays & HashMaps](./agents/swe-i/arrays-hashmaps-interviewer/SKILL.md) · [Broken API](./agents/debugging/broken-api-interviewer/SKILL.md)
+2. Copy the entire page
+3. Paste into your AI as the first message
 4. Say: **"Start the interview"**
 
-That's it. The AI will adopt the interviewer persona and begin.
-
-**Try these first:**
-- [System Design: URL Shortener](./agents/systems-design/url-shortener-interviewer/SKILL.md) — the classic starter
-- [Coding: Arrays & HashMaps](./agents/swe-i/arrays-hashmaps-interviewer/SKILL.md) — entry-level warmup
-- [Debugging: Broken API](./agents/debugging/broken-api-interviewer/SKILL.md) — "your API is returning 500s, fix it"
-
-### Option B: Use with Claude Code (more features)
-
-```bash
-git clone https://github.com/ps06756/The-Interview-Mentor.git
-cd The-Interview-Mentor
-
-# Load a skill category
-claude --plugin-dir ./agents/systems-design
-
-# Start your interview
-> "Use the uber-interviewer skill and start my mock interview."
-```
-
-> See [docs/use-with-claude-code.md](./docs/use-with-claude-code.md) for full setup details.
+> **Using Claude Code?** `claude --plugin-dir ./agents/systems-design` then ask for any skill. [Full setup →](./docs/use-with-claude-code.md)
 
 ---
 
 ## Choose your path
 
-| I'm preparing for... | Start here |
-|----------------------|------------|
-| **New grad / first SWE job** | [Arrays & HashMaps](./agents/swe-i/arrays-hashmaps-interviewer/SKILL.md) → [Linked Lists](./agents/swe-i/linked-lists-interviewer/SKILL.md) → [Binary Trees](./agents/swe-i/binary-trees-interviewer/SKILL.md) |
-| **Mid-level SWE (L4/SWE-II)** | [URL Shortener](./agents/systems-design/url-shortener-interviewer/SKILL.md) → [Dynamic Programming](./agents/swe-ii/dynamic-programming-interviewer/SKILL.md) → [Rate Limiter](./agents/systems-design/rate-limiter-interviewer/SKILL.md) |
-| **Senior/Staff (L5-L7)** | [Design Uber](./agents/systems-design/uber-interviewer/SKILL.md) → [Design Twitter](./agents/systems-design/twitter-interviewer/SKILL.md) → [Distributed Systems](./agents/systems-design/distributed-systems-interviewer/SKILL.md) |
-| **Data Engineer** | [SQL Optimization](./agents/data-engineer/sql-optimization-interviewer/SKILL.md) → [Pipeline Architect](./agents/data-engineer/pipeline-architect-interviewer/SKILL.md) → [Schema Design](./agents/data-engineer/schema-design-interviewer/SKILL.md) |
-| **DevOps / SRE** | [Kubernetes](./agents/devops-sre/kubernetes-interviewer/SKILL.md) → [CI/CD Pipeline](./agents/devops-sre/cicd-pipeline-interviewer/SKILL.md) → [Monitoring](./agents/devops-sre/monitoring-alerting-interviewer/SKILL.md) |
+| Preparing for... | Start with |
+|-----------------|------------|
+| **New grad** | [Arrays](./agents/swe-i/arrays-hashmaps-interviewer/SKILL.md) → [Linked Lists](./agents/swe-i/linked-lists-interviewer/SKILL.md) → [Trees](./agents/swe-i/binary-trees-interviewer/SKILL.md) |
+| **Mid-level SWE** | [URL Shortener](./agents/systems-design/url-shortener-interviewer/SKILL.md) → [DP](./agents/swe-ii/dynamic-programming-interviewer/SKILL.md) → [Rate Limiter](./agents/systems-design/rate-limiter-interviewer/SKILL.md) |
+| **Senior / Staff** | [Uber](./agents/systems-design/uber-interviewer/SKILL.md) → [Twitter](./agents/systems-design/twitter-interviewer/SKILL.md) → [Distributed Systems](./agents/systems-design/distributed-systems-interviewer/SKILL.md) |
+| **Data Engineer** | [SQL Optimization](./agents/data-engineer/sql-optimization-interviewer/SKILL.md) → [Pipelines](./agents/data-engineer/pipeline-architect-interviewer/SKILL.md) → [Schema Design](./agents/data-engineer/schema-design-interviewer/SKILL.md) |
+| **DevOps / SRE** | [Kubernetes](./agents/devops-sre/kubernetes-interviewer/SKILL.md) → [CI/CD](./agents/devops-sre/cicd-pipeline-interviewer/SKILL.md) → [Monitoring](./agents/devops-sre/monitoring-alerting-interviewer/SKILL.md) |
 | **ML Engineer** | [ML System Design](./agents/ml-engineer/ml-system-design-interviewer/SKILL.md) → [Deep Learning](./agents/ml-engineer/deep-learning-interviewer/SKILL.md) |
-| **AI Product Manager** | [AI Product Strategy](./agents/ai-pm/ai-product-strategy-interviewer/SKILL.md) → [Prompt Engineering](./agents/ai-pm/prompt-engineering-interviewer/SKILL.md) |
-| **Behavioral prep** | [Leadership Principles](./agents/behavioral/leadership-principles-interviewer/SKILL.md) |
-| **I don't know where to start** | [Problem Decomposition](./agents/meta/problem-decomposition-interviewer/SKILL.md) — teaches you how to approach *any* unknown problem |
+| **AI Product Manager** | [AI Strategy](./agents/ai-pm/ai-product-strategy-interviewer/SKILL.md) → [Prompt Eng](./agents/ai-pm/prompt-engineering-interviewer/SKILL.md) → [Responsible AI](./agents/ai-pm/responsible-ai-interviewer/SKILL.md) |
+| **Behavioral** | [Leadership Principles](./agents/behavioral/leadership-principles-interviewer/SKILL.md) |
+| **Not sure** | [Problem Decomposition](./agents/meta/problem-decomposition-interviewer/SKILL.md) — how to approach *any* unknown problem |
 
-> For a structured 8-week curriculum, see [references/learning-path.md](./references/learning-path.md).
+[8-week study plan →](./references/learning-path.md)
 
 ---
 
 ## Why this is different
 
-| Generic interview prep | The Interview Mentor |
-|----------------------|---------------------|
-| Asks a question, you answer, it says "correct!" | Catches you saying "I'd use a cache" and asks about eviction policies, TTL, and thundering herds |
-| One difficulty level | Calibrates to you — goes easier if you're struggling, harder if you're breezing through |
-| You get stuck and just see the answer | 4-level hint system: nudge → direction → partial solution → full walkthrough |
-| No feedback on weak areas | Generates a scorecard rating you across multiple dimensions (Novice / Intermediate / Expert) |
-| Same questions every time | 40 specialized interviewers with distinct personas and deep domain expertise |
-| Only covers coding | Coding + system design + data engineering + DevOps + ML + AI PM + debugging + behavioral |
+| Other tools | The Interview Mentor |
+|------------|---------------------|
+| Says "correct!" | Pushes harder when your answer sounds shallow |
+| One difficulty | Adapts — easier if you struggle, harder if you breeze through |
+| Shows the answer when you're stuck | 4-level hints: nudge → direction → partial → full walkthrough |
+| No feedback | Scorecard across multiple dimensions (Novice / Intermediate / Expert) |
+| Coding only | Coding, system design, data eng, DevOps, ML, AI PM, debugging, behavioral |
+| Generic chatbot | 40 distinct interviewer personas with deep domain expertise |
 
 ---
 
