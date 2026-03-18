@@ -68,9 +68,9 @@ Each skill is a markdown file with clear instructions. Copy the content and past
 | Skill | Topic | Difficulty | Description |
 |-------|-------|------------|-------------|
 | [Arrays & HashMaps](./agents/swe-i/arrays-hashmaps-interviewer/SKILL.md) | Data Structures | Easy-Medium | Two pointers, sliding window, frequency counting |
-| Linked Lists | Data Structures | Easy | Reversal, merging, cycle detection |
-| Binary Trees | Trees | Easy-Medium | Traversals, BFS/DFS, basic operations |
-| Recursion Basics | Algorithms | Easy | Base cases, call stacks, simple problems |
+| *Linked Lists* | Data Structures | Easy | *Coming Soon* |
+| *Binary Trees* | Trees | Easy-Medium | *Coming Soon* |
+| *Recursion Basics* | Algorithms | Easy | *Coming Soon* |
 
 ### 🚀 Mid Level (SWE-II / Backend / Frontend)
 
@@ -78,8 +78,8 @@ Each skill is a markdown file with clear instructions. Copy the content and past
 |-------|-------|------------|-------------|
 | [URL Shortener](./agents/systems-design/url-shortener-interviewer/SKILL.md) | System Design | Medium | Distributed systems, scaling, trade-offs |
 | [Rate Limiter](./agents/systems-design/rate-limiter-interviewer/SKILL.md) | System Design | Medium | Token bucket, sliding window, Redis |
-| Graph Algorithms | Algorithms | Medium | BFS, DFS, Dijkstra, topological sort |
-| Dynamic Programming | Algorithms | Medium-Hard | Memoization, tabulation, common patterns |
+| *Graph Algorithms* | Algorithms | Medium | *Coming Soon* |
+| *Dynamic Programming* | Algorithms | Medium-Hard | *Coming Soon* |
 
 ### 🏗️ Specialized Roles
 
@@ -90,8 +90,8 @@ Each skill is a markdown file with clear instructions. Copy the content and past
 | [SQL Optimization](./agents/data-engineer/sql-optimization-interviewer/SKILL.md) | Database | Medium-Hard | Indexing, query plans, schema design |
 | [Pipeline Architect](./agents/data-engineer/pipeline-architect-interviewer/SKILL.md) | Data Engineering | Medium-Hard | End-to-end pipelines, Kafka/Flink, scaling, failure modes |
 | [Schema Design](./agents/data-engineer/schema-design-interviewer/SKILL.md) | Data Engineering | Medium-Hard | Dimensional modeling, SCDs, star schema, query optimization |
-| Data Pipeline Design | Data Engineering | Medium | ETL/ELT, Apache Airflow, data quality |
-| Data Modeling | Data Engineering | Medium | Star schema, snowflake, data warehouses |
+| *Data Pipeline Design* | Data Engineering | Medium | *Coming Soon* |
+| *Data Modeling* | Data Engineering | Medium | *Coming Soon* |
 
 #### Systems Architecture & Distributed Systems
 
@@ -110,25 +110,25 @@ Each skill is a markdown file with clear instructions. Copy the content and past
 | Skill | Topic | Difficulty | Description |
 |-------|-------|------------|-------------|
 | [Reliability & Observability](./agents/systems-design/reliability-observability-interviewer/SKILL.md) | Reliability | Medium-Hard | Circuit Breakers, RED Metrics, RTO/RPO, Retries |
-| Kubernetes Fundamentals | Infrastructure | Medium | Pods, services, deployments |
-| CI/CD Pipeline Design | DevOps | Medium | GitHub Actions, Jenkins, testing strategies |
-| Monitoring & Alerting | SRE | Medium | Prometheus, Grafana, SLIs/SLOs/SLAs |
+| *Kubernetes Fundamentals* | Infrastructure | Medium | *Coming Soon* |
+| *CI/CD Pipeline Design* | DevOps | Medium | *Coming Soon* |
+| *Monitoring & Alerting* | SRE | Medium | *Coming Soon* |
 
 #### Machine Learning Engineer
 
 | Skill | Topic | Difficulty | Description |
 |-------|-------|------------|-------------|
-| ML System Design | ML Engineering | Hard | Feature stores, model serving, A/B testing |
-| Deep Learning Interview | ML Theory | Hard | CNNs, RNNs, Transformers, training dynamics |
+| *ML System Design* | ML Engineering | Hard | *Coming Soon* |
+| *Deep Learning Interview* | ML Theory | Hard | *Coming Soon* |
 
 ### 👑 Senior+ Level (SWE-III / Senior / Staff)
 
 | Skill | Topic | Difficulty | Description |
 |-------|-------|------------|-------------|
-| Design Twitter/X | System Design | Hard | Feed generation, fan-out, consistency |
+| *Design Twitter/X* | System Design | Hard | *Coming Soon* |
 | [Design Uber](./agents/systems-design/uber-interviewer/SKILL.md) | System Design | Hard | Real-time tracking, matching, maps |
-| Design a Search Engine | System Design | Hard | Indexing, ranking, query understanding |
-| Leadership Principles | Behavioral | All Levels | STAR method, cross-functional collaboration |
+| *Design a Search Engine* | System Design | Hard | *Coming Soon* |
+| *Leadership Principles* | Behavioral | All Levels | *Coming Soon* |
 
 ---
 
