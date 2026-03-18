@@ -41,18 +41,18 @@ We created The Mentor because we believe interview preparation should be accessi
 Download the latest release as a ZIP file:
 
 ```bash
-curl -L https://github.com/ps06756/The-Mentor/archive/refs/tags/v1.0.1.zip -o The-Mentor.zip
+curl -L https://github.com/ps06756/The-Interview-Mentor/archive/refs/tags/v1.0.2.zip  -o The-Mentor.zip
 unzip The-Mentor.zip
 ```
 
-Or manually download from: [https://github.com/ps06756/The-Mentor/archive/refs/tags/v1.0.1.zip](https://github.com/ps06756/The-Interview-Mentor/archive/refs/tags/v1.0.1.zip)
+Or manually download from: [https://github.com/ps06756/The-Interview-Mentor/archive/refs/tags/v1.0.2.zip](https://github.com/ps06756/The-Interview-Mentor/archive/refs/tags/v1.0.2.zip)
 
 ### Step 2: Install in Claude Code
 
 Open Claude Code and run the following commands to add the marketplace:
 
 ```
-/plugin marketplace add  <path_to_the_downloaded_folder>
+/plugin marketplace add  <path_to_the_downloaded_folder_above>
 ```
 
 Then install the coding interview agent:
