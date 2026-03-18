@@ -68,9 +68,9 @@ Each skill is a markdown file with clear instructions. Copy the content and past
 | Skill | Topic | Difficulty | Description |
 |-------|-------|------------|-------------|
 | [Arrays & HashMaps](./agents/swe-i/arrays-hashmaps-interviewer/SKILL.md) | Data Structures | Easy-Medium | Two pointers, sliding window, frequency counting |
-| *Linked Lists* | Data Structures | Easy | *Coming Soon* |
-| *Binary Trees* | Trees | Easy-Medium | *Coming Soon* |
-| *Recursion Basics* | Algorithms | Easy | *Coming Soon* |
+| [Linked Lists](./agents/swe-i/linked-lists-interviewer/SKILL.md) | Data Structures | Easy | Reversal, merging, cycle detection |
+| [Binary Trees](./agents/swe-i/binary-trees-interviewer/SKILL.md) | Trees | Easy-Medium | Traversals, BFS/DFS, basic operations |
+| [Recursion Basics](./agents/swe-i/recursion-basics-interviewer/SKILL.md) | Algorithms | Easy | Base cases, call stacks, simple problems |
 
 ### 🚀 Mid Level (SWE-II / Backend / Frontend)
 
@@ -78,8 +78,8 @@ Each skill is a markdown file with clear instructions. Copy the content and past
 |-------|-------|------------|-------------|
 | [URL Shortener](./agents/systems-design/url-shortener-interviewer/SKILL.md) | System Design | Medium | Distributed systems, scaling, trade-offs |
 | [Rate Limiter](./agents/systems-design/rate-limiter-interviewer/SKILL.md) | System Design | Medium | Token bucket, sliding window, Redis |
-| *Graph Algorithms* | Algorithms | Medium | *Coming Soon* |
-| *Dynamic Programming* | Algorithms | Medium-Hard | *Coming Soon* |
+| [Graph Algorithms](./agents/swe-ii/graph-algorithms-interviewer/SKILL.md) | Algorithms | Medium | BFS, DFS, Dijkstra, topological sort |
+| [Dynamic Programming](./agents/swe-ii/dynamic-programming-interviewer/SKILL.md) | Algorithms | Medium-Hard | Memoization, tabulation, common patterns |
 
 ### 🏗️ Specialized Roles
 
@@ -90,8 +90,8 @@ Each skill is a markdown file with clear instructions. Copy the content and past
 | [SQL Optimization](./agents/data-engineer/sql-optimization-interviewer/SKILL.md) | Database | Medium-Hard | Indexing, query plans, schema design |
 | [Pipeline Architect](./agents/data-engineer/pipeline-architect-interviewer/SKILL.md) | Data Engineering | Medium-Hard | End-to-end pipelines, Kafka/Flink, scaling, failure modes |
 | [Schema Design](./agents/data-engineer/schema-design-interviewer/SKILL.md) | Data Engineering | Medium-Hard | Dimensional modeling, SCDs, star schema, query optimization |
-| *Data Pipeline Design* | Data Engineering | Medium | *Coming Soon* |
-| *Data Modeling* | Data Engineering | Medium | *Coming Soon* |
+| [Data Pipeline Design](./agents/data-engineer/data-pipeline-design-interviewer/SKILL.md) | Data Engineering | Medium | ETL/ELT, Apache Airflow, data quality |
+| [Data Modeling](./agents/data-engineer/data-modeling-interviewer/SKILL.md) | Data Engineering | Medium | Star schema, snowflake, data warehouses |
 
 #### Systems Architecture & Distributed Systems
 
@@ -110,25 +110,25 @@ Each skill is a markdown file with clear instructions. Copy the content and past
 | Skill | Topic | Difficulty | Description |
 |-------|-------|------------|-------------|
 | [Reliability & Observability](./agents/systems-design/reliability-observability-interviewer/SKILL.md) | Reliability | Medium-Hard | Circuit Breakers, RED Metrics, RTO/RPO, Retries |
-| *Kubernetes Fundamentals* | Infrastructure | Medium | *Coming Soon* |
-| *CI/CD Pipeline Design* | DevOps | Medium | *Coming Soon* |
-| *Monitoring & Alerting* | SRE | Medium | *Coming Soon* |
+| [Kubernetes Fundamentals](./agents/devops-sre/kubernetes-interviewer/SKILL.md) | Infrastructure | Medium | Pods, services, deployments |
+| [CI/CD Pipeline Design](./agents/devops-sre/cicd-pipeline-interviewer/SKILL.md) | DevOps | Medium | GitHub Actions, Jenkins, testing strategies |
+| [Monitoring & Alerting](./agents/devops-sre/monitoring-alerting-interviewer/SKILL.md) | SRE | Medium | Prometheus, Grafana, SLIs/SLOs/SLAs |
 
 #### Machine Learning Engineer
 
 | Skill | Topic | Difficulty | Description |
 |-------|-------|------------|-------------|
-| *ML System Design* | ML Engineering | Hard | *Coming Soon* |
-| *Deep Learning Interview* | ML Theory | Hard | *Coming Soon* |
+| [ML System Design](./agents/ml-engineer/ml-system-design-interviewer/SKILL.md) | ML Engineering | Hard | Feature stores, model serving, A/B testing |
+| [Deep Learning Interview](./agents/ml-engineer/deep-learning-interviewer/SKILL.md) | ML Theory | Hard | CNNs, RNNs, Transformers, training dynamics |
 
 ### 👑 Senior+ Level (SWE-III / Senior / Staff)
 
 | Skill | Topic | Difficulty | Description |
 |-------|-------|------------|-------------|
-| *Design Twitter/X* | System Design | Hard | *Coming Soon* |
+| [Design Twitter/X](./agents/systems-design/twitter-interviewer/SKILL.md) | System Design | Hard | Feed generation, fan-out, consistency |
 | [Design Uber](./agents/systems-design/uber-interviewer/SKILL.md) | System Design | Hard | Real-time tracking, matching, maps |
-| *Design a Search Engine* | System Design | Hard | *Coming Soon* |
-| *Leadership Principles* | Behavioral | All Levels | *Coming Soon* |
+| [Design a Search Engine](./agents/systems-design/search-engine-interviewer/SKILL.md) | System Design | Hard | Indexing, ranking, query understanding |
+| [Leadership Principles](./agents/behavioral/leadership-principles-interviewer/SKILL.md) | Behavioral | All Levels | STAR method, cross-functional collaboration |
 
 ---
 
@@ -252,9 +252,13 @@ The-Mentor/
 │   └── skill-template/       # Template for creating new skills
 │       └── SKILL.md
 ├── agents/
-│   ├── swe-i/                # Entry level (Arrays, HashMaps, etc.)
-│   ├── data-engineer/        # Data engineering (SQL, Pipelines, Schema)
-│   └── systems-design/       # System design interviews (11 skills)
+│   ├── swe-i/                # Entry level (Arrays, Linked Lists, Trees, Recursion)
+│   ├── swe-ii/               # Mid level (Graphs, Dynamic Programming)
+│   ├── data-engineer/        # Data engineering (SQL, Pipelines, Schema, Modeling)
+│   ├── systems-design/       # System design interviews (13 skills)
+│   ├── devops-sre/           # DevOps & SRE (Kubernetes, CI/CD, Monitoring)
+│   ├── ml-engineer/          # ML Engineering (System Design, Deep Learning)
+│   └── behavioral/           # Behavioral interviews (Leadership Principles)
 ```
 
 ---
