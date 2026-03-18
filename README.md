@@ -81,6 +81,7 @@ Each skill is a markdown file with clear instructions. Copy the content and past
 |-------|-------|------------|-------------|
 | [SQL Optimization](./agents/data-engineer/sql-optimization-interviewer.md) | Database | Medium-Hard | Indexing, query plans, schema design |
 | [Pipeline Architect](./agents/data-engineer/pipeline-architect-interviewer.md) | Data Engineering | Medium-Hard | End-to-end pipelines, Kafka/Flink, scaling, failure modes |
+| [Schema Design](./agents/data-engineer/schema-design-interviewer.md) | Data Engineering | Medium-Hard | Dimensional modeling, SCDs, star schema, query optimization |
 | Data Pipeline Design | Data Engineering | Medium | ETL/ELT, Apache Airflow, data quality |
 | Data Modeling | Data Engineering | Medium | Star schema, snowflake, data warehouses |
 
