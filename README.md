@@ -54,7 +54,7 @@ Each skill is a markdown file with clear instructions. Copy the content and past
 
 ### Option 3: Create Your Own Skill
 
-1. Copy `templates/skill-template.md`
+1. Copy `templates/skill-template/` directory
 2. Fill in your topic, role, and questions
 3. Add it to the appropriate `agents/` directory
 4. Submit a PR!
@@ -67,7 +67,7 @@ Each skill is a markdown file with clear instructions. Copy the content and past
 
 | Skill | Topic | Difficulty | Description |
 |-------|-------|------------|-------------|
-| [Arrays & HashMaps](./agents/swe-i/arrays-hashmaps-interviewer.md) | Data Structures | Easy-Medium | Two pointers, sliding window, frequency counting |
+| [Arrays & HashMaps](./agents/swe-i/arrays-hashmaps-interviewer/SKILL.md) | Data Structures | Easy-Medium | Two pointers, sliding window, frequency counting |
 | Linked Lists | Data Structures | Easy | Reversal, merging, cycle detection |
 | Binary Trees | Trees | Easy-Medium | Traversals, BFS/DFS, basic operations |
 | Recursion Basics | Algorithms | Easy | Base cases, call stacks, simple problems |
@@ -76,8 +76,8 @@ Each skill is a markdown file with clear instructions. Copy the content and past
 
 | Skill | Topic | Difficulty | Description |
 |-------|-------|------------|-------------|
-| [URL Shortener](./agents/systems-design/url-shortener-interviewer.md) | System Design | Medium | Distributed systems, scaling, trade-offs |
-| [Rate Limiter](./agents/systems-design/rate-limiter-interviewer.md) | System Design | Medium | Token bucket, sliding window, Redis |
+| [URL Shortener](./agents/systems-design/url-shortener-interviewer/SKILL.md) | System Design | Medium | Distributed systems, scaling, trade-offs |
+| [Rate Limiter](./agents/systems-design/rate-limiter-interviewer/SKILL.md) | System Design | Medium | Token bucket, sliding window, Redis |
 | Graph Algorithms | Algorithms | Medium | BFS, DFS, Dijkstra, topological sort |
 | Dynamic Programming | Algorithms | Medium-Hard | Memoization, tabulation, common patterns |
 
@@ -87,9 +87,9 @@ Each skill is a markdown file with clear instructions. Copy the content and past
 
 | Skill | Topic | Difficulty | Description |
 |-------|-------|------------|-------------|
-| [SQL Optimization](./agents/data-engineer/sql-optimization-interviewer.md) | Database | Medium-Hard | Indexing, query plans, schema design |
-| [Pipeline Architect](./agents/data-engineer/pipeline-architect-interviewer.md) | Data Engineering | Medium-Hard | End-to-end pipelines, Kafka/Flink, scaling, failure modes |
-| [Schema Design](./agents/data-engineer/schema-design-interviewer.md) | Data Engineering | Medium-Hard | Dimensional modeling, SCDs, star schema, query optimization |
+| [SQL Optimization](./agents/data-engineer/sql-optimization-interviewer/SKILL.md) | Database | Medium-Hard | Indexing, query plans, schema design |
+| [Pipeline Architect](./agents/data-engineer/pipeline-architect-interviewer/SKILL.md) | Data Engineering | Medium-Hard | End-to-end pipelines, Kafka/Flink, scaling, failure modes |
+| [Schema Design](./agents/data-engineer/schema-design-interviewer/SKILL.md) | Data Engineering | Medium-Hard | Dimensional modeling, SCDs, star schema, query optimization |
 | Data Pipeline Design | Data Engineering | Medium | ETL/ELT, Apache Airflow, data quality |
 | Data Modeling | Data Engineering | Medium | Star schema, snowflake, data warehouses |
 
@@ -97,19 +97,19 @@ Each skill is a markdown file with clear instructions. Copy the content and past
 
 | Skill | Topic | Difficulty | Description |
 |-------|-------|------------|-------------|
-| [Database Architecture](./agents/systems-design/database-architecture-interviewer.md) | Databases | Medium-Hard | SQL vs NoSQL, Indexing, ACID, Sharding |
-| [Microservices Architecture](./agents/systems-design/microservices-architecture-interviewer.md) | Architecture | Medium-Hard | DDD, API Gateways, Sagas, Resilience |
-| [Distributed Systems Core](./agents/systems-design/distributed-systems-interviewer.md) | Dist. Systems | Hard | CAP Theorem, Quorums, Consensus, Clocks |
-| [Caching Architecture](./agents/systems-design/caching-architecture-interviewer.md) | Caching | Medium-Hard | Topologies, Eviction, Consistency, Stampedes |
-| [Message Queues](./agents/systems-design/message-queues-interviewer.md) | Messaging | Medium-Hard | Kafka vs RabbitMQ, DLQs, Idempotency, Ordering |
-| [API Design & Gateways](./agents/systems-design/api-design-interviewer.md) | API Design | Medium | REST, Pagination, Auth, API Gateways |
-| [Networking & Load Balancing](./agents/systems-design/networking-load-balancing-interviewer.md) | Networking | Medium-Hard | OSI Layers, L4/L7 LBs, TLS, Consistent Hashing |
+| [Database Architecture](./agents/systems-design/database-architecture-interviewer/SKILL.md) | Databases | Medium-Hard | SQL vs NoSQL, Indexing, ACID, Sharding |
+| [Microservices Architecture](./agents/systems-design/microservices-architecture-interviewer/SKILL.md) | Architecture | Medium-Hard | DDD, API Gateways, Sagas, Resilience |
+| [Distributed Systems Core](./agents/systems-design/distributed-systems-interviewer/SKILL.md) | Dist. Systems | Hard | CAP Theorem, Quorums, Consensus, Clocks |
+| [Caching Architecture](./agents/systems-design/caching-architecture-interviewer/SKILL.md) | Caching | Medium-Hard | Topologies, Eviction, Consistency, Stampedes |
+| [Message Queues](./agents/systems-design/message-queues-interviewer/SKILL.md) | Messaging | Medium-Hard | Kafka vs RabbitMQ, DLQs, Idempotency, Ordering |
+| [API Design & Gateways](./agents/systems-design/api-design-interviewer/SKILL.md) | API Design | Medium | REST, Pagination, Auth, API Gateways |
+| [Networking & Load Balancing](./agents/systems-design/networking-load-balancing-interviewer/SKILL.md) | Networking | Medium-Hard | OSI Layers, L4/L7 LBs, TLS, Consistent Hashing |
 
 #### DevOps / SRE
 
 | Skill | Topic | Difficulty | Description |
 |-------|-------|------------|-------------|
-| [Reliability & Observability](./agents/systems-design/reliability-observability-interviewer.md) | Reliability | Medium-Hard | Circuit Breakers, RED Metrics, RTO/RPO, Retries |
+| [Reliability & Observability](./agents/systems-design/reliability-observability-interviewer/SKILL.md) | Reliability | Medium-Hard | Circuit Breakers, RED Metrics, RTO/RPO, Retries |
 | Kubernetes Fundamentals | Infrastructure | Medium | Pods, services, deployments |
 | CI/CD Pipeline Design | DevOps | Medium | GitHub Actions, Jenkins, testing strategies |
 | Monitoring & Alerting | SRE | Medium | Prometheus, Grafana, SLIs/SLOs/SLAs |
@@ -126,7 +126,7 @@ Each skill is a markdown file with clear instructions. Copy the content and past
 | Skill | Topic | Difficulty | Description |
 |-------|-------|------------|-------------|
 | Design Twitter/X | System Design | Hard | Feed generation, fan-out, consistency |
-| [Design Uber](./agents/systems-design/uber-interviewer.md) | System Design | Hard | Real-time tracking, matching, maps |
+| [Design Uber](./agents/systems-design/uber-interviewer/SKILL.md) | System Design | Hard | Real-time tracking, matching, maps |
 | Design a Search Engine | System Design | Hard | Indexing, ranking, query understanding |
 | Leadership Principles | Behavioral | All Levels | STAR method, cross-functional collaboration |
 
