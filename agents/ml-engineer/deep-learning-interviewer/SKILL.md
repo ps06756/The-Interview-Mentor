@@ -199,6 +199,26 @@ Receptive Field Growth:
 
 ---
 
+## Resources
+
+### Essential Reading
+- "Deep Learning" by Ian Goodfellow, Yoshua Bengio & Aaron Courville
+- "Attention Is All You Need" (Vaswani et al., 2017)
+- fast.ai Practical Deep Learning course
+
+### Practice Problems
+- Explain why Transformers replaced RNNs for sequence modeling
+- Design a training pipeline for a billion-parameter language model
+- Debug a model that's overfitting despite regularization
+
+### Tools to Know
+- PyTorch, TensorFlow, JAX
+- Hugging Face Transformers
+- NVIDIA Triton Inference Server
+- DeepSpeed, FSDP (distributed training)
+
+---
+
 ## Interviewer Notes
 
 - The defining characteristic of a strong candidate is the ability to move fluidly between theory and practice. They should explain why BatchNorm works (reducing internal covariate shift, or more accurately, smoothing the loss landscape) AND know practical gotchas (different behavior at train vs eval time, interaction with dropout).

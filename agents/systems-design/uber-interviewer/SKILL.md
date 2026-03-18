@@ -165,6 +165,26 @@ If no drivers, expand to neighbors: 9x, 9t, 9s, 9y, etc.
 
 ---
 
+## Resources
+
+### Essential Reading
+- "Designing Data-Intensive Applications" by Martin Kleppmann
+- "System Design Interview" by Alex Xu (Uber chapter)
+- Uber Engineering Blog on geospatial indexing and dispatch
+
+### Practice Problems
+- Design a food delivery dispatch system (DoorDash/UberEats)
+- Design a real-time fleet management dashboard
+- Design surge pricing with dynamic supply/demand balancing
+
+### Tools to Know
+- Geospatial: Redis Geo, PostGIS, H3 (Uber's hexagonal grid), S2 Geometry
+- Streaming: Kafka, Apache Flink (real-time processing)
+- Storage: Cassandra (driver locations), Redis (hot data)
+- Protocols: WebSockets, MQTT (low-bandwidth location pings)
+
+---
+
 ## Interviewer Notes
 
 - The defining characteristic of a Senior/Staff candidate is how they handle the **matching concurrency** and **sharding strategy**.

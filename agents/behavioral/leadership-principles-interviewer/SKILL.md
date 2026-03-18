@@ -183,6 +183,25 @@ Common Pitfalls:
 
 ---
 
+## Resources
+
+### Essential Reading
+- "Who: The A Method for Hiring" by Geoff Smart & Randy Street
+- Amazon Leadership Principles (amazon.jobs/principles)
+- "The Manager's Path" by Camille Fournier
+
+### Practice Scenarios
+- Describe a time you had to make a decision with incomplete data
+- Tell me about mentoring a struggling team member
+- Describe leading a project that required cross-team alignment
+
+### Preparation Tips
+- Use the STAR method for every answer
+- Quantify impact wherever possible
+- Prepare 8-10 stories that cover multiple principles
+
+---
+
 ## Interviewer Notes
 
 - The goal is to understand how the candidate THINKS and BEHAVES, not to quiz them on technical knowledge. Never turn this into a coding or system design interview.

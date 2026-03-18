@@ -186,6 +186,26 @@ User B opens their timeline.
 
 ---
 
+## Resources
+
+### Essential Reading
+- "Designing Data-Intensive Applications" by Martin Kleppmann
+- "System Design Interview" by Alex Xu (Twitter/Facebook chapters)
+- Twitter Engineering Blog on timeline architecture
+
+### Practice Problems
+- Design a notification delivery system for 500M users
+- Design trending topics with real-time and historical signals
+- Design a content moderation pipeline
+
+### Tools to Know
+- Redis (fan-out cache, sorted sets for timelines)
+- Kafka (event streaming for timeline updates)
+- Memcached (timeline caching)
+- GraphQL (flexible feed queries)
+
+---
+
 ## Interviewer Notes
 
 - The defining characteristic of a Senior/Staff candidate is how they handle the **celebrity fan-out problem** and whether they arrive at the hybrid model independently.

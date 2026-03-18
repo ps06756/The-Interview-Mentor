@@ -146,6 +146,26 @@ from Nodes 3,4,5 and returns the value from Node 3.
 
 ---
 
+## Resources
+
+### Essential Reading
+- "Designing Data-Intensive Applications" by Martin Kleppmann (Chapters 5, 7, 8, 9)
+- "Distributed Systems" by Maarten van Steen & Andrew Tanenbaum
+- The Raft Consensus Algorithm paper (raft.github.io)
+
+### Practice Problems
+- Design a distributed lock service (like Chubby/ZooKeeper)
+- Design a globally consistent configuration store
+- Design a conflict-free replicated data type (CRDT) for a collaborative editor
+
+### Tools to Know
+- ZooKeeper / etcd (consensus and coordination)
+- Raft visualization (thesecretlivesofdata.com/raft)
+- Jepsen testing framework (jepsen.io)
+- Google Spanner / CockroachDB (distributed SQL with TrueTime)
+
+---
+
 ## Interviewer Notes
 
 - This is a highly theoretical interview. Push candidates to ground their theory in practical examples.

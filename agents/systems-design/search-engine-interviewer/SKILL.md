@@ -219,6 +219,26 @@ Query: "cat sat"
 
 ---
 
+## Resources
+
+### Essential Reading
+- "Introduction to Information Retrieval" by Manning, Raghavan & Schutze
+- "Relevant Search" by Doug Turnbull & John Berryman
+- Google papers: MapReduce, GFS, PageRank
+
+### Practice Problems
+- Design web crawling for 1 billion pages
+- Design autocomplete with personalization
+- Design a spell correction system
+
+### Tools to Know
+- Elasticsearch / Apache Solr (search engines)
+- Apache Nutch (web crawling)
+- Apache Lucene (inverted index library)
+- Vespa (real-time serving engine)
+
+---
+
 ## Interviewer Notes
 
 - The defining characteristic of a Senior/Staff candidate is whether they can reason about the **multi-stage ranking pipeline** and the trade-off between recall (L0) and precision (L2).

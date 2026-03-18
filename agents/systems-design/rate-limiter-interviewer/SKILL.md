@@ -149,6 +149,26 @@ Estimated count = (8 * 0.25) + 4 = 2 + 4 = 6 requests
 
 ---
 
+## Resources
+
+### Essential Reading
+- "System Design Interview" by Alex Xu (Rate Limiter chapter)
+- "Designing Data-Intensive Applications" by Martin Kleppmann
+- Stripe Engineering Blog on rate limiting
+
+### Practice Problems
+- Design a distributed rate limiter for a multi-region API
+- Design rate limiting for a WebSocket-based chat service
+- Design adaptive rate limiting that adjusts based on server load
+
+### Tools to Know
+- Redis (INCR, EXPIRE, Lua scripting for atomicity)
+- Nginx rate limiting module (limit_req)
+- Envoy proxy rate limiting
+- AWS API Gateway throttling
+
+---
+
 ## Interviewer Notes
 
 - Push candidates to explicitly write down the data schema they would store in Redis. It reveals if they actually understand the algorithm.

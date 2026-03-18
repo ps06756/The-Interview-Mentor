@@ -188,6 +188,26 @@ Data Sources                   Feature Store                    Consumers
 
 ---
 
+## Resources
+
+### Essential Reading
+- "Designing Machine Learning Systems" by Chip Huyen
+- "Machine Learning Engineering" by Andriy Burkov
+- "Rules of Machine Learning" by Martin Zinkevich (Google)
+
+### Practice Problems
+- Design a recommendation system for an e-commerce platform
+- Design a real-time fraud detection pipeline
+- Design a model serving platform with A/B testing
+
+### Tools to Know
+- Feature Stores: Feast, Tecton, Hopsworks
+- Model Serving: TensorFlow Serving, Triton, BentoML, Seldon
+- Experiment Tracking: MLflow, Weights & Biases, Neptune
+- Orchestration: Kubeflow, Airflow, Metaflow
+
+---
+
 ## Interviewer Notes
 
 - The defining characteristic of a Senior/Staff ML candidate is whether they think about the full lifecycle or just the model. If they spend all their time on model architecture without discussing data quality, feature freshness, or monitoring, push them hard.
