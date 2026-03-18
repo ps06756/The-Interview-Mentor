@@ -1,4 +1,4 @@
-# 🎓 The Mentor
+# 🎓 The Interview Mentor
 
 > **AI-Powered Interview Preparation for Software Engineers**
 
