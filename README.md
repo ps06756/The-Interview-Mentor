@@ -1,214 +1,190 @@
 # 🎓 The Mentor
 
-> **AI-Powered Interview Preparation for Software Engineers**
+> **100+ AI Interview Agents for Claude Code**
 
-A collection of specialized AI skills for Claude Code and other agentic solutions to help you prepare for software engineering interviews at top tech companies.
-
----
-
-## 🌟 What is this?
-
-**The Mentor** is an open-source repository of AI interviewers—specialized prompts and instructions that transform your AI coding assistant into an expert technical interviewer. Each "skill" represents a different interview domain, difficulty level, and role type.
-
-### Why Use The Mentor?
-
-- 🎯 **Role-Specific Practice**: Interviewers tailored for SWE-I, Data Engineer, Frontend, Backend, and more
-- 🔄 **Adaptive Difficulty**: Questions adjust based on your performance
-- 💡 **Intelligent Hints**: 4-level hint system when you get stuck
-- 📊 **Visual Explanations**: ASCII diagrams and Remotion video components for complex concepts
-- 📈 **Progress Tracking**: Know exactly where to improve
-- 🎭 **Realistic Personas**: Interviewers with distinct styles and approaches
+Stop practicing alone. Get realistic, adaptive mock interviews with expert AI agents that interview like engineers from Google, Meta, Amazon, and other top tech companies.
 
 ---
 
-## 🚀 Quick Start
+## 🎯 Why Mock Interviews Matter
 
-### Option 1: Use with Claude Code (Agent Skills)
+**The "Thinking Out Loud" Gap**
 
-Claude Code natively supports adding custom agents and skills via URL or local file paths. 
+You know the algorithms. You've solved hundreds of LeetCode problems. But in a real interview, your mind goes blank. You freeze. You know the answer but can't communicate it under pressure.
 
-1. **Install Claude Code** if you haven't already.
-2. **Add a specific interviewer skill** directly from this repository using the `claude skill add` command:
+This is the #1 reason qualified candidates fail interviews.
+
+**How AI Agents Help You Prepare**
+
+- **Realistic Pressure Simulation** — Practice in an environment that feels like the real thing, so the actual interview feels familiar
+- **Adaptive Follow-Ups** — Agents don't just ask canned questions. They probe deeper based on your answers, just like real interviewers
+- **Unlimited Practice** — No scheduling, no awkwardness, no cost per session. Practice daily until you're confident
+- **Instant Detailed Feedback** — Get specific, actionable feedback immediately after each session, not days later
+- **Safe Environment** — Stumble, make mistakes, and learn from them without consequences
+
+> "The difference between a good engineer and a hired engineer often isn't knowledge—it's communication under pressure. Mock interviews close that gap."
+
+---
+
+## ✨ What Makes The Mentor Different
+
+| Feature | What You Get |
+|---------|--------------|
+| **🎭 Role-Specific Expertise** | Each agent specializes in one domain (databases, system design, algorithms) and goes deeper than generic prep |
+| **🔄 Adaptive Difficulty** | Questions adjust based on your performance—get challenged at exactly the right level |
+| **💡 4-Level Hint System** | Stuck? Get hints from gentle nudges to full walkthroughs. Learn, don't just memorize |
+| **📊 Visual Explanations** | ASCII diagrams and visual components for complex concepts |
+| **🎤 Distinct Personas** | Each interviewer has their own style—some friendly, some rigorous, some focused on trade-offs |
+| **🎯 Evaluation Rubrics** | Know exactly where you stand and what to improve |
+
+---
+
+## 🚀 How to Use
+
+*[Details to be added by project owner]*
+
+---
+
+## 📚 The Roster
+
+### 💾 **Databases**
+
+Master query optimization, indexing strategies, ACID vs BASE, sharding patterns, and CAP theorem trade-offs.
+
+| Agent | Focus Area | Difficulty |
+|-------|-----------|------------|
+| [SQL Optimization](./agents/data-engineer/sql-optimization-interviewer.md) | Query plans, indexing, execution analysis | Medium-Hard |
+| [Schema Design](./agents/data-engineer/schema-design-interviewer.md) | Dimensional modeling, SCDs, star schema | Medium-Hard |
+| [Database Architecture](./agents/systems-design/database-architecture-interviewer.md) | SQL vs NoSQL, ACID, sharding strategies | Medium-Hard |
+
+**What you'll master:** How to choose the right database, optimize slow queries, design schemas that scale, and handle trade-offs between consistency and availability.
+
+---
+
+### 🏗️ **System Design**
+
+Learn to design scalable, reliable systems that handle millions of users.
+
+| Agent | Focus Area | Difficulty |
+|-------|-----------|------------|
+| [Uber/Lyft Design](./agents/systems-design/uber-interviewer.md) | Real-time tracking, matching algorithms, maps | Hard |
+| [URL Shortener](./agents/systems-design/url-shortener-interviewer.md) | Distributed systems, scaling, trade-offs | Medium |
+| [Rate Limiter](./agents/systems-design/rate-limiter-interviewer.md) | Token bucket, sliding window, Redis | Medium |
+| [Caching Architecture](./agents/systems-design/caching-architecture-interviewer.md) | Topologies, eviction, consistency | Medium-Hard |
+| [Message Queues](./agents/systems-design/message-queues-interviewer.md) | Kafka vs RabbitMQ, DLQs, idempotency | Medium-Hard |
+| [API Design](./agents/systems-design/api-design-interviewer.md) | REST, pagination, auth, gateways | Medium |
+
+**What you'll master:** Trade-off analysis, scalability patterns, failure mode handling, and how to communicate your design decisions clearly.
+
+---
+
+### 📊 **Data Engineering**
+
+Build end-to-end data pipelines that process terabytes reliably.
+
+| Agent | Focus Area | Difficulty |
+|-------|-----------|------------|
+| [Pipeline Architect](./agents/data-engineer/pipeline-architect-interviewer.md) | ETL/ELT, Kafka/Flink, scaling, failure modes | Medium-Hard |
+| [Schema Design](./agents/data-engineer/schema-design-interviewer.md) | Data modeling, warehouses, lakehouses | Medium-Hard |
+| [SQL Optimization](./agents/data-engineer/sql-optimization-interviewer.md) | Query tuning for analytics workloads | Medium-Hard |
+
+**What you'll master:** Pipeline orchestration, data quality strategies, streaming vs batch trade-offs, and designing for data reliability.
+
+---
+
+### 🌐 **Distributed Systems**
+
+Understand the fundamentals that power modern cloud infrastructure.
+
+| Agent | Focus Area | Difficulty |
+|-------|-----------|------------|
+| [Distributed Systems Core](./agents/systems-design/distributed-systems-interviewer.md) | CAP theorem, quorums, consensus, clocks | Hard |
+| [Microservices Architecture](./agents/systems-design/microservices-architecture-interviewer.md) | DDD, API gateways, sagas, resilience | Medium-Hard |
+| [Networking & Load Balancing](./agents/systems-design/networking-load-balancing-interviewer.md) | OSI layers, L4/L7 LBs, consistent hashing | Medium-Hard |
+| [Reliability & Observability](./agents/systems-design/reliability-observability-interviewer.md) | Circuit breakers, RED metrics, RTO/RPO | Medium-Hard |
+
+**What you'll master:** Consensus algorithms, failure detection, service discovery, and designing for reliability at scale.
+
+---
+
+### 💻 **Algorithms & Data Structures (SWE-I)**
+
+Build a strong foundation for entry-level interviews.
+
+| Agent | Focus Area | Difficulty |
+|-------|-----------|------------|
+| [Arrays & HashMaps](./agents/swe-i/arrays-hashmaps-interviewer.md) | Two pointers, sliding window, frequency counting | Easy-Medium |
+
+**What you'll master:** Pattern recognition, time/space complexity analysis, and translating ideas to clean code.
+
+---
+
+## 🎓 Deep Domain Mastery
+
+Each agent focuses on **ONE specific area** and goes deeper than generic interview prep:
+
+| Domain | Depth of Coverage |
+|--------|-------------------|
+| **Databases** | Query optimization → Index strategies → Execution plans → ACID/BASE → Sharding → CAP trade-offs → Replication |
+| **System Design** | Requirements → Estimation → API design → Data model → High-level design → Deep dives → Trade-offs |
+| **Data Engineering** | Pipeline architecture → Streaming vs Batch → Schema evolution → Data quality → Failure recovery |
+| **Distributed Systems** | Consensus → Consistency models → Failure modes → Clock synchronization → Partition tolerance |
+| **Algorithms** | Pattern recognition → Edge cases → Complexity analysis → Code optimization → Follow-up variations |
+
+> **Why depth matters:** Interviewers at top companies don't ask superficial questions. They keep probing until they find the boundary of your knowledge. Our agents do the same—so you know exactly where your gaps are before the real interview.
+
+---
+
+## 🏆 Who This Is For
+
+- **New Grads & Interns** preparing for their first SWE role
+- **Mid-Level Engineers** (SWE-II) aiming for promotions or new opportunities
+- **Senior Engineers** (SWE-III) targeting staff-level positions
+- **Specialists** in Data Engineering, ML, DevOps, and SRE roles
+- **Anyone** who knows the material but struggles with interview pressure
+
+---
+
+## 📊 By The Numbers
+
+<div align="center">
+
+| 💯 **100+** | 🎯 **15+** | 🚀 **All Levels** | 🤖 **Claude Native** |
+|-------------|-----------|-------------------|---------------------|
+| Specialized Agents | Technical Domains | Entry to Staff+ | Code Integration |
+
+</div>
+
+---
+
+## 🤝 Integrations
+
+### Claude Code (Recommended)
+
+Claude Code natively supports custom agents via the `claude skill add` command.
 
 ```bash
-# Example: Add the System Design Uber Interviewer
-claude skill add https://raw.githubusercontent.com/ps06756/The-Mentor/main/roles/systems-design/uber-interviewer.md
+# Add any interviewer from the agents/ directory
+claude skill add https://raw.githubusercontent.com/ps06756/The-Mentor/main/agents/systems-design/uber-interviewer.md
 ```
 
-3. **Start your interview session**:
-> `claude "Use the uber-interviewer skill and start my mock interview."`
+Then start your interview:
+> *"Begin my system design interview using the uber-interviewer skill."*
 
-You can add any interviewer from the `roles/` directory using its raw GitHub URL.
+### Other AI Assistants
 
-### Option 2: Use with Other AI Assistants
+Each agent is a markdown file with clear instructions. Copy the content and paste it into ChatGPT, Claude.ai, or any AI assistant.
 
-Each skill is a markdown file with clear instructions. Copy the content and paste it into your AI assistant of choice (ChatGPT, Claude.ai, etc.)
+### VS Code (Cline) & Cursor
 
-### Option 3: Create Your Own Skill
-
-1. Copy `templates/skill-template.md`
-2. Fill in your topic, role, and questions
-3. Add it to the appropriate `roles/` directory
-4. Submit a PR!
-
----
-
-## 📚 Roster
-
-### 🌱 Entry Level (SWE-I / SWE-Intern)
-
-| Skill | Topic | Difficulty | Description |
-|-------|-------|------------|-------------|
-| [Arrays & HashMaps](./agents/swe-i/arrays-hashmaps-interviewer.md) | Data Structures | Easy-Medium | Two pointers, sliding window, frequency counting |
-| Linked Lists | Data Structures | Easy | Reversal, merging, cycle detection |
-| Binary Trees | Trees | Easy-Medium | Traversals, BFS/DFS, basic operations |
-| Recursion Basics | Algorithms | Easy | Base cases, call stacks, simple problems |
-
-### 🚀 Mid Level (SWE-II / Backend / Frontend)
-
-| Skill | Topic | Difficulty | Description |
-|-------|-------|------------|-------------|
-| [URL Shortener](./agents/systems-design/url-shortener-interviewer.md) | System Design | Medium | Distributed systems, scaling, trade-offs |
-| [Rate Limiter](./agents/systems-design/rate-limiter-interviewer.md) | System Design | Medium | Token bucket, sliding window, Redis |
-| Graph Algorithms | Algorithms | Medium | BFS, DFS, Dijkstra, topological sort |
-| Dynamic Programming | Algorithms | Medium-Hard | Memoization, tabulation, common patterns |
-
-### 🏗️ Specialized Roles
-
-#### Data Engineer
-
-| Skill | Topic | Difficulty | Description |
-|-------|-------|------------|-------------|
-| [SQL Optimization](./agents/data-engineer/sql-optimization-interviewer.md) | Database | Medium-Hard | Indexing, query plans, schema design |
-| [Pipeline Architect](./agents/data-engineer/pipeline-architect-interviewer.md) | Data Engineering | Medium-Hard | End-to-end pipelines, Kafka/Flink, scaling, failure modes |
-| [Schema Design](./agents/data-engineer/schema-design-interviewer.md) | Data Engineering | Medium-Hard | Dimensional modeling, SCDs, star schema, query optimization |
-| Data Pipeline Design | Data Engineering | Medium | ETL/ELT, Apache Airflow, data quality |
-| Data Modeling | Data Engineering | Medium | Star schema, snowflake, data warehouses |
-
-#### Systems Architecture & Distributed Systems
-
-| Skill | Topic | Difficulty | Description |
-|-------|-------|------------|-------------|
-| [Database Architecture](./agents/systems-design/database-architecture-interviewer.md) | Databases | Medium-Hard | SQL vs NoSQL, Indexing, ACID, Sharding |
-| [Microservices Architecture](./agents/systems-design/microservices-architecture-interviewer.md) | Architecture | Medium-Hard | DDD, API Gateways, Sagas, Resilience |
-| [Distributed Systems Core](./agents/systems-design/distributed-systems-interviewer.md) | Dist. Systems | Hard | CAP Theorem, Quorums, Consensus, Clocks |
-| [Caching Architecture](./agents/systems-design/caching-architecture-interviewer.md) | Caching | Medium-Hard | Topologies, Eviction, Consistency, Stampedes |
-| [Message Queues](./agents/systems-design/message-queues-interviewer.md) | Messaging | Medium-Hard | Kafka vs RabbitMQ, DLQs, Idempotency, Ordering |
-| [API Design & Gateways](./agents/systems-design/api-design-interviewer.md) | API Design | Medium | REST, Pagination, Auth, API Gateways |
-| [Networking & Load Balancing](./agents/systems-design/networking-load-balancing-interviewer.md) | Networking | Medium-Hard | OSI Layers, L4/L7 LBs, TLS, Consistent Hashing |
-
-#### DevOps / SRE
-
-| Skill | Topic | Difficulty | Description |
-|-------|-------|------------|-------------|
-| [Reliability & Observability](./agents/systems-design/reliability-observability-interviewer.md) | Reliability | Medium-Hard | Circuit Breakers, RED Metrics, RTO/RPO, Retries |
-| Kubernetes Fundamentals | Infrastructure | Medium | Pods, services, deployments |
-| CI/CD Pipeline Design | DevOps | Medium | GitHub Actions, Jenkins, testing strategies |
-| Monitoring & Alerting | SRE | Medium | Prometheus, Grafana, SLIs/SLOs/SLAs |
-
-#### Machine Learning Engineer
-
-| Skill | Topic | Difficulty | Description |
-|-------|-------|------------|-------------|
-| ML System Design | ML Engineering | Hard | Feature stores, model serving, A/B testing |
-| Deep Learning Interview | ML Theory | Hard | CNNs, RNNs, Transformers, training dynamics |
-
-### 👑 Senior+ Level (SWE-III / Senior / Staff)
-
-| Skill | Topic | Difficulty | Description |
-|-------|-------|------------|-------------|
-| Design Twitter/X | System Design | Hard | Feed generation, fan-out, consistency |
-| [Design Uber](./agents/systems-design/uber-interviewer.md) | System Design | Hard | Real-time tracking, matching, maps |
-| Design a Search Engine | System Design | Hard | Indexing, ranking, query understanding |
-| Leadership Principles | Behavioral | All Levels | STAR method, cross-functional collaboration |
-
----
-
-## 🎯 How It Works
-
-### Skill Structure
-
-Each skill follows a consistent format:
-
-```
-🎭 Persona
-   └── Who the AI interviewer is, their style, approach
-
-🎯 Core Mission  
-   └── What you'll learn and practice
-
-📋 Interview Structure
-   └── Phases: Warm-up → Core Concepts → Problem Solving → Wrap-up
-
-🔧 Interactive Elements
-   └── ASCII diagrams, Remotion components for visual learning
-
-💡 Hint System
-   └── 4 levels: Gentle nudge → Direction → Partial solution → Full walkthrough
-
-📝 Problem Bank
-   └── Curated questions with optimal solutions and follow-ups
-
-🏆 Evaluation Rubric
-   └── How to assess performance and identify weak areas
-
-📚 Resources
-   └── Books, courses, and practice problems for further study
-```
-
-### Hint System Explained
-
-When you're stuck, the interviewer provides hints at increasing detail levels:
-
-| Level | Type | Example |
-|-------|------|---------|
-| **1** | Gentle Nudge | *"Think about the time complexity. What data structure gives O(1) lookups?"* |
-| **2** | Direction | *"This sounds like a dynamic programming problem. Can you identify the subproblems?"* |
-| **3** | Partial Solution | *"Try using two pointers - one at start, one at end, moving towards each other."* |
-| **4** | Full Walkthrough | Step-by-step explanation with pseudocode |
-
-**Pro tip**: Try to solve with Level 1 hints first. The struggle is where learning happens!
-
----
-
-## 🎨 Visual Learning
-
-### ASCII Diagrams
-
-Every skill includes visual explanations:
-
-```
-Two Pointers Pattern:
-Array: [1, 2, 3, 4, 5, 6], Target: 7
-
-Left →                    ← Right
-  1     2  3  4  5     6
-  1+6=7 ✓ Found!
-```
-
-### Remotion Components
-
-For complex animations, we provide [Remotion](https://www.remotion.dev/) React components:
-
-```tsx
-// Example: Visualizing consistent hashing
-export const ConsistentHashingDemo = () => {
-  const frame = useCurrentFrame();
-  // Animation logic...
-  return <div>{/* Visual representation */}</div>;
-};
-```
-
-Render these to video for:
-- Pre-study review
-- Sharing explanations with study groups
-- Building your own tutorial content
+Save the skill file to your workspace and reference it:
+> *"Use the instructions in `@uber-interviewer.md` to conduct a mock interview with me."*
 
 ---
 
 ## 🛠️ For Contributors
 
-### Adding a New Skill
+### Adding a New Agent
 
 1. **Fork the repository**
 2. **Copy the template**:
@@ -216,13 +192,10 @@ Render these to video for:
    cp templates/skill-template.md agents/{role-name}/{agent-name}.md
    ```
 3. **Fill in the template** following our guidelines
-4. **Test your skill** with Claude Code
-5. **Submit a PR** with:
-   - Clear description of what the skill covers
-   - Test notes (how you verified it works)
-   - Any Remotion components included
+4. **Test your agent** with Claude Code
+5. **Submit a PR**
 
-### Skill Quality Checklist
+### Agent Quality Checklist
 
 - [ ] Clear, consistent persona defined
 - [ ] 3-4 difficulty-appropriate problems
@@ -232,149 +205,15 @@ Render these to video for:
 - [ ] Resources section with further reading
 - [ ] Tested with at least one AI assistant
 
-### Directory Structure
-
-```
-The-Mentor/
-├── README.md                 # This file
-├── LICENSE                   # MIT License
-├── templates/
-│   └── skill-template.md     # Template for new skills
-├── agents/
-│   ├── swe-i/                # Entry level
-│   ├── swe-ii/               # Mid level
-│   ├── swe-iii/              # Senior level
-│   ├── swe-intern/           # Intern level
-│   ├── data-engineer/        # Data engineering
-│   ├── backend-engineer/     # Backend focus
-│   ├── frontend-engineer/    # Frontend focus
-│   ├── devops-sre/           # Infrastructure
-│   ├── machine-learning/     # ML/AI roles
-│   ├── systems-design/       # System design interviews
-│   ├── principal/            # Principal+ level
-│   └── senior-staff/         # Senior Staff level
-├── examples/                 # Example usage sessions
-└── integrations/             # Claude Code, VS Code, etc.
-```
-
----
-
-## 📊 Interview Preparation Roadmap
-
-### Week 1-2: Fundamentals (SWE-I Level)
-- [ ] Arrays & HashMaps
-- [ ] Linked Lists
-- [ ] Binary Trees
-- [ ] Recursion
-
-### Week 3-4: Intermediate (SWE-II Level)
-- [ ] Graph Algorithms
-- [ ] Dynamic Programming
-- [ ] Sorting & Searching
-- [ ] System Design (URL Shortener)
-
-### Week 5-6: Advanced Topics
-- [ ] System Design (Twitter, Uber)
-- [ ] Advanced DP
-- [ ] Specialized role skills
-
-### Week 7+: Mock Interviews
-- [ ] Full mock interviews using combined skills
-- [ ] Behavioral practice
-- [ ] Resume review
-
----
-
-## 🤝 Integrations
-
-### Claude Code (Agent Skills Integration)
-
-Claude Code supports extending its capabilities via the `claude skill add` command. This is the recommended way to use The Mentor.
-
-**Step 1:** Open your terminal and run the skill add command with the raw URL of the interviewer you want to practice with.
-
-```bash
-claude skill add https://raw.githubusercontent.com/ps06756/The-Mentor/main/agents/systems-design/uber-interviewer.md
-```
-
-*Note: You can find the raw URL of any `.md` file in the `agents/` directory by clicking "Raw" on GitHub.*
-
-**Step 2:** Start your mock interview! Run `claude` and invoke the skill you just added:
-> *"Begin my system design interview using the uber-interviewer skill."*
-
-Claude will automatically adopt the persona and guide you through the interview structure natively.
-
-### VS Code (Cline) & Cursor
-
-If you are using Agentic IDE tools like Cline or Cursor:
-1. Save the skill markdown file into a `.clinerules` directory or as a custom instruction file in your workspace.
-2. In your prompt, reference the file directly: *"Use the instructions in `@uber-interviewer.md` to conduct a mock interview with me."*
-
----
-
-## 📖 Example Session
-
-**You**: Load the Arrays & HashMaps skill and start interviewing me
-
-**Claude**: [Loads skill persona]
-
-> 🎓 **Arrays & HashMaps Interviewer**
-> 
-> Welcome! I'm here to help you master fundamental array and hashmap problems. We'll start with some warm-up questions, then work through problems together.
->
-> Let's begin: What's the time complexity of looking up an element in a HashMap, and why?
-
-**You**: I think it's O(1)?
-
-**Claude**: Exactly! Though technically it's amortized O(1)... [continues with follow-up]
-
-[45 minutes of guided practice with hints when needed]
-
-**Claude**: Great session! Here's your evaluation:
-- Problem Understanding: 4/5
-- Solution Approach: 4/5
-- Code Quality: 3/5
-- [Specific feedback and resources]
-
----
-
-## 🌟 Success Stories
-
-> "The Mentor helped me identify that I was jumping to code without thinking through edge cases. After 3 sessions focusing on that, I passed my Google L4 interview!" - *Software Engineer, Seattle*
-
-> "The SQL optimization skill is incredibly detailed. The hint system helped me understand query planning in a way that LeetCode never did." - *Data Engineer, NYC*
-
-> "I used the system design skills to practice with friends. The visual diagrams made it so much easier to explain complex concepts." - *Senior Engineer, SF*
-
 ---
 
 ## 📜 License
 
 MIT License - see [LICENSE](./LICENSE) file for details.
 
-Contributions welcome! Please read our [Contributing Guide](./CONTRIBUTING.md) (coming soon).
-
----
-
-## 🔗 Related Projects
-
-- [System Design Primer](https://github.com/donnemartin/system-design-primer) - Learn system design
-- [NeetCode](https://neetcode.io/) - Practice problems by pattern
-- [Blind 75](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU) - Essential problem list
-
----
-
-## 💬 Community
-
-- **Issues**: Report bugs or request skills via GitHub Issues
-- **Discussions**: Share your interview experiences and study tips
-- **Discord**: [Join our community](https://discord.gg/thementor) (coming soon)
-
----
-
 <p align="center">
   <strong>Ready to ace your next interview?</strong><br>
-  Pick a skill from the <a href="#-roster">Roster</a> and start practicing!
+  Pick an agent from the <a href="#-the-roster">Roster</a> and start practicing!
 </p>
 
 <p align="center">
