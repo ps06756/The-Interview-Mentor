@@ -88,74 +88,97 @@ Each skill is a markdown file with clear instructions. Copy the content and past
 
 ---
 
-## 📚 Roster
+## 📚 Roster (40 Skills)
 
-### 🌱 Entry Level (SWE-I / SWE-Intern)
-
-| Skill | Topic | Difficulty | Description |
-|-------|-------|------------|-------------|
-| [Arrays & HashMaps](https://github.com/ps06756/The-Interview-Mentor/tree/main/agents/swe-i/arrays-hashmaps-interviewer) | Data Structures | Easy-Medium | Two pointers, sliding window, frequency counting |
-| Linked Lists | Data Structures | Easy | Reversal, merging, cycle detection |
-| Binary Trees | Trees | Easy-Medium | Traversals, BFS/DFS, basic operations |
-| Recursion Basics | Algorithms | Easy | Base cases, call stacks, simple problems |
-
-### 🚀 Mid Level (SWE-II / Backend / Frontend)
+### 🌱 Entry Level (SWE-I) — 5 skills
 
 | Skill | Topic | Difficulty | Description |
 |-------|-------|------------|-------------|
-| [URL Shortener](https://github.com/ps06756/The-Interview-Mentor/tree/main/agents/systems-design/url-shortener-interviewer) | System Design | Medium | Distributed systems, scaling, trade-offs |
-| [Rate Limiter](https://github.com/ps06756/The-Interview-Mentor/tree/main/agents/systems-design/rate-limiter-interviewer) | System Design | Medium | Token bucket, sliding window, Redis |
-| Graph Algorithms | Algorithms | Medium | BFS, DFS, Dijkstra, topological sort |
-| Dynamic Programming | Algorithms | Medium-Hard | Memoization, tabulation, common patterns |
+| [Arrays & HashMaps](./agents/swe-i/arrays-hashmaps-interviewer/SKILL.md) | Data Structures | Easy-Medium | Frequency counting, prefix/suffix products, sliding window |
+| [Linked Lists](./agents/swe-i/linked-lists-interviewer/SKILL.md) | Data Structures | Easy | Reversal, merging, cycle detection |
+| [Binary Trees](./agents/swe-i/binary-trees-interviewer/SKILL.md) | Trees | Easy-Medium | Traversals, BFS/DFS, basic operations |
+| [Recursion Basics](./agents/swe-i/recursion-basics-interviewer/SKILL.md) | Algorithms | Easy | Base cases, call stacks, backtracking |
+| [Stacks & Queues](./agents/swe-i/stacks-queues-interviewer/SKILL.md) | Data Structures | Easy-Medium | Monotonic stack, expression evaluation |
 
-### 🏗️ Specialized Roles
-
-#### Data Engineer
-
-| Skill | Topic | Difficulty | Description |
-|-------|-------|------------|-------------|
-| [SQL Optimization](https://github.com/ps06756/The-Interview-Mentor/tree/main/agents/data-engineer/sql-optimization-interviewer) | Database | Medium-Hard | Indexing, query plans, schema design |
-| [Pipeline Architect](https://github.com/ps06756/The-Interview-Mentor/tree/main/agents/data-engineer/pipeline-architect-interviewer) | Data Engineering | Medium-Hard | End-to-end pipelines, Kafka/Flink, scaling, failure modes |
-| [Schema Design](https://github.com/ps06756/The-Interview-Mentor/tree/main/agents/data-engineer/schema-design-interviewer) | Data Engineering | Medium-Hard | Dimensional modeling, SCDs, star schema, query optimization |
-| Data Pipeline Design | Data Engineering | Medium | ETL/ELT, Apache Airflow, data quality |
-| Data Modeling | Data Engineering | Medium | Star schema, snowflake, data warehouses |
-
-#### Systems Architecture & Distributed Systems
+### 🚀 Mid Level (SWE-II) — 5 skills
 
 | Skill | Topic | Difficulty | Description |
 |-------|-------|------------|-------------|
-| [Database Architecture](https://github.com/ps06756/The-Interview-Mentor/tree/main/agents/systems-design/database-architecture-interviewer) | Databases | Medium-Hard | SQL vs NoSQL, Indexing, ACID, Sharding |
-| [Microservices Architecture](https://github.com/ps06756/The-Interview-Mentor/tree/main/agents/systems-design/microservices-architecture-interviewer) | Architecture | Medium-Hard | DDD, API Gateways, Sagas, Resilience |
-| [Distributed Systems Core](https://github.com/ps06756/The-Interview-Mentor/tree/main/agents/systems-design/distributed-systems-interviewer) | Dist. Systems | Hard | CAP Theorem, Quorums, Consensus, Clocks |
-| [Caching Architecture](https://github.com/ps06756/The-Interview-Mentor/tree/main/agents/systems-design/caching-architecture-interviewer) | Caching | Medium-Hard | Topologies, Eviction, Consistency, Stampedes |
-| [Message Queues](https://github.com/ps06756/The-Interview-Mentor/tree/main/agents/systems-design/message-queues-interviewer) | Messaging | Medium-Hard | Kafka vs RabbitMQ, DLQs, Idempotency, Ordering |
-| [API Design & Gateways](https://github.com/ps06756/The-Interview-Mentor/tree/main/agents/systems-design/api-design-interviewer) | API Design | Medium | REST, Pagination, Auth, API Gateways |
-| [Networking & Load Balancing](https://github.com/ps06756/The-Interview-Mentor/tree/main/agents/systems-design/networking-load-balancing-interviewer) | Networking | Medium-Hard | OSI Layers, L4/L7 LBs, TLS, Consistent Hashing |
+| [URL Shortener](./agents/systems-design/url-shortener-interviewer/SKILL.md) | System Design | Medium | Capacity estimation, hashing, caching, analytics |
+| [Rate Limiter](./agents/systems-design/rate-limiter-interviewer/SKILL.md) | System Design | Medium | Token bucket, sliding window, Redis |
+| [Graph Algorithms](./agents/swe-ii/graph-algorithms-interviewer/SKILL.md) | Algorithms | Medium | BFS, DFS, implicit graphs, union-find |
+| [Dynamic Programming](./agents/swe-ii/dynamic-programming-interviewer/SKILL.md) | Algorithms | Medium-Hard | Memoization, tabulation, common patterns |
+| [Heaps & Priority Queues](./agents/swe-ii/heap-priority-queue-interviewer/SKILL.md) | Algorithms | Medium | Top-K, merge K sorted, median stream |
 
-#### DevOps / SRE
+### 🏗️ Systems Architecture & Distributed Systems — 13 skills
 
 | Skill | Topic | Difficulty | Description |
 |-------|-------|------------|-------------|
-| [Reliability & Observability](https://github.com/ps06756/The-Interview-Mentor/tree/main/agents/systems-design/reliability-observability-interviewer) | Reliability | Medium-Hard | Circuit Breakers, RED Metrics, RTO/RPO, Retries |
-| Kubernetes Fundamentals | Infrastructure | Medium | Pods, services, deployments |
-| CI/CD Pipeline Design | DevOps | Medium | GitHub Actions, Jenkins, testing strategies |
-| Monitoring & Alerting | SRE | Medium | Prometheus, Grafana, SLIs/SLOs/SLAs |
+| [Database Architecture](./agents/systems-design/database-architecture-interviewer/SKILL.md) | Databases | Medium-Hard | SQL vs NoSQL, Indexing, ACID, Sharding |
+| [Microservices Architecture](./agents/systems-design/microservices-architecture-interviewer/SKILL.md) | Architecture | Medium-Hard | DDD, API Gateways, Sagas, Resilience |
+| [Distributed Systems Core](./agents/systems-design/distributed-systems-interviewer/SKILL.md) | Dist. Systems | Hard | CAP Theorem, Quorums, Consensus, Clocks |
+| [Caching Architecture](./agents/systems-design/caching-architecture-interviewer/SKILL.md) | Caching | Medium-Hard | Topologies, Eviction, Consistency, Stampedes |
+| [Message Queues](./agents/systems-design/message-queues-interviewer/SKILL.md) | Messaging | Medium-Hard | Kafka vs RabbitMQ, DLQs, Idempotency, Ordering |
+| [API Design & Gateways](./agents/systems-design/api-design-interviewer/SKILL.md) | API Design | Medium | REST, Pagination, Auth, Versioning, Idempotency |
+| [Networking & Load Balancing](./agents/systems-design/networking-load-balancing-interviewer/SKILL.md) | Networking | Medium-Hard | OSI Layers, L4/L7 LBs, TLS, Consistent Hashing |
+| [Reliability & Observability](./agents/systems-design/reliability-observability-interviewer/SKILL.md) | Reliability | Medium-Hard | Circuit Breakers, RED Metrics, RTO/RPO, Retries |
+| [Design Twitter/X](./agents/systems-design/twitter-interviewer/SKILL.md) | System Design | Hard | Feed generation, fan-out, consistency |
+| [Design Uber](./agents/systems-design/uber-interviewer/SKILL.md) | System Design | Hard | Real-time tracking, matching, maps |
+| [Design a Search Engine](./agents/systems-design/search-engine-interviewer/SKILL.md) | System Design | Hard | Crawling, inverted index, ranking, autocomplete |
 
-#### Machine Learning Engineer
+### 💾 Data Engineering — 3 skills
 
 | Skill | Topic | Difficulty | Description |
 |-------|-------|------------|-------------|
-| ML System Design | ML Engineering | Hard | Feature stores, model serving, A/B testing |
-| Deep Learning Interview | ML Theory | Hard | CNNs, RNNs, Transformers, training dynamics |
+| [SQL Optimization](./agents/data-engineer/sql-optimization-interviewer/SKILL.md) | Database | Medium-Hard | Indexing, query plans, schema design |
+| [Pipeline Architect](./agents/data-engineer/pipeline-architect-interviewer/SKILL.md) | Data Engineering | Medium-Hard | End-to-end pipelines, Kafka/Flink, Airflow, failure modes |
+| [Schema Design](./agents/data-engineer/schema-design-interviewer/SKILL.md) | Data Engineering | Medium-Hard | Dimensional modeling, SCDs, star schema, lakehouse |
 
-### 👑 Senior+ Level (SWE-III / Senior / Staff)
+### 🔧 DevOps / SRE — 3 skills
 
 | Skill | Topic | Difficulty | Description |
 |-------|-------|------------|-------------|
-| Design Twitter/X | System Design | Hard | Feed generation, fan-out, consistency |
-| [Design Uber](https://github.com/ps06756/The-Interview-Mentor/tree/main/agents/systems-design/uber-interviewer) | System Design | Hard | Real-time tracking, matching, maps |
-| Design a Search Engine | System Design | Hard | Indexing, ranking, query understanding |
-| Leadership Principles | Behavioral | All Levels | STAR method, cross-functional collaboration |
+| [Kubernetes Fundamentals](./agents/devops-sre/kubernetes-interviewer/SKILL.md) | Infrastructure | Medium | Pods, services, deployments |
+| [CI/CD Pipeline Design](./agents/devops-sre/cicd-pipeline-interviewer/SKILL.md) | DevOps | Medium | GitHub Actions, Jenkins, testing strategies |
+| [Monitoring & Alerting](./agents/devops-sre/monitoring-alerting-interviewer/SKILL.md) | SRE | Medium | Prometheus, Grafana, SLIs/SLOs/SLAs |
+
+### 🤖 Machine Learning Engineer — 2 skills
+
+| Skill | Topic | Difficulty | Description |
+|-------|-------|------------|-------------|
+| [ML System Design](./agents/ml-engineer/ml-system-design-interviewer/SKILL.md) | ML Engineering | Hard | Feature stores, model serving, A/B testing |
+| [Deep Learning Interview](./agents/ml-engineer/deep-learning-interviewer/SKILL.md) | ML Theory | Hard | CNNs, RNNs, Transformers, training dynamics |
+
+### 🧠 AI Product Management — 3 skills (NEW)
+
+| Skill | Topic | Difficulty | Description |
+|-------|-------|------------|-------------|
+| [AI Product Strategy](./agents/ai-pm/ai-product-strategy-interviewer/SKILL.md) | AI PM | Hard | When to use AI, success metrics, cost-quality trade-offs |
+| [Prompt Engineering](./agents/ai-pm/prompt-engineering-interviewer/SKILL.md) | AI Engineering | Hard | Prompt architecture, RAG, evaluation, token optimization |
+| [Responsible AI](./agents/ai-pm/responsible-ai-interviewer/SKILL.md) | AI Ethics | Hard | Bias mitigation, content moderation, regulatory compliance |
+
+### 🔍 Debugging & Incident Response — 6 skills (NEW)
+
+| Skill | Topic | Difficulty | Description |
+|-------|-------|------------|-------------|
+| [Broken API](./agents/debugging/broken-api-interviewer/SKILL.md) | Debugging | Medium-Hard | 500 errors under load, connection pool exhaustion, deadlocks |
+| [Slow Database](./agents/debugging/slow-database-interviewer/SKILL.md) | Debugging | Medium-Hard | Query regression, stale statistics, lock contention |
+| [Memory Leak](./agents/debugging/memory-leak-interviewer/SKILL.md) | Debugging | Medium-Hard | Unbounded caches, listener leaks, closure retention |
+| [Cascading Failure](./agents/debugging/cascading-failure-interviewer/SKILL.md) | Debugging | Hard | Thread pool exhaustion, retry storms, missing circuit breakers |
+| [Data Inconsistency](./agents/debugging/data-inconsistency-interviewer/SKILL.md) | Debugging | Hard | Timezone mismatches, duplicate events, missing refunds |
+| [Deployment Rollback](./agents/debugging/deployment-rollback-interviewer/SKILL.md) | Debugging | Medium-Hard | Failed deploys, migration rollbacks, feature flag issues |
+
+### 🎭 Behavioral — 1 skill
+
+| Skill | Topic | Difficulty | Description |
+|-------|-------|------------|-------------|
+| [Leadership Principles](./agents/behavioral/leadership-principles-interviewer/SKILL.md) | Behavioral | All Levels | STAR method, cross-functional collaboration |
+
+### 🧩 Meta-Skills — 1 skill (NEW)
+
+| Skill | Topic | Difficulty | Description |
+|-------|-------|------------|-------------|
+| [Problem Decomposition](./agents/meta/problem-decomposition-interviewer/SKILL.md) | Problem Solving | All Levels | Pattern recognition, approach selection, structured thinking |
 
 ---
 
@@ -273,50 +296,49 @@ Render these to video for:
 The-Mentor/
 ├── README.md                 # This file
 ├── LICENSE                   # MIT License
+├── CONTRIBUTING.md           # How to contribute new skills
+├── references/
+│   └── learning-path.md      # Structured curriculum (6 tracks)
 ├── templates/
-│   └── skill-template.md     # Template for new skills
+│   └── skill-template/       # Template for creating new skills
+│       └── SKILL.md
 ├── agents/
-│   ├── swe-i/                # Entry level
-│   ├── swe-ii/               # Mid level
-│   ├── swe-iii/              # Senior level
-│   ├── swe-intern/           # Intern level
-│   ├── data-engineer/        # Data engineering
-│   ├── backend-engineer/     # Backend focus
-│   ├── frontend-engineer/    # Frontend focus
-│   ├── devops-sre/           # Infrastructure
-│   ├── machine-learning/     # ML/AI roles
-│   ├── systems-design/       # System design interviews
-│   ├── principal/            # Principal+ level
-│   └── senior-staff/         # Senior Staff level
-├── examples/                 # Example usage sessions
-└── integrations/             # Claude Code, VS Code, etc.
+│   ├── swe-i/                # 5 entry-level coding skills
+│   ├── swe-ii/               # 3 mid-level algorithm skills
+│   ├── data-engineer/        # 3 data engineering skills
+│   ├── systems-design/       # 13 system design skills
+│   ├── devops-sre/           # 3 DevOps & SRE skills
+│   ├── ml-engineer/          # 2 ML engineering skills
+│   ├── ai-pm/                # 3 AI product management skills
+│   ├── debugging/            # 6 debugging & incident response skills
+│   ├── behavioral/           # 1 behavioral interview skill
+│   └── meta/                 # 1 meta-skill (problem decomposition)
 ```
 
 ---
 
 ## 📊 Interview Preparation Roadmap
 
-### Week 1-2: Fundamentals (SWE-I Level)
-- [ ] Arrays & HashMaps
-- [ ] Linked Lists
-- [ ] Binary Trees
-- [ ] Recursion
+For the full structured curriculum with 6 tracks, see the [Learning Path](./references/learning-path.md).
 
-### Week 3-4: Intermediate (SWE-II Level)
-- [ ] Graph Algorithms
-- [ ] Dynamic Programming
-- [ ] Sorting & Searching
-- [ ] System Design (URL Shortener)
+### SWE Track (8 Weeks)
 
-### Week 5-6: Advanced Topics
-- [ ] System Design (Twitter, Uber)
-- [ ] Advanced DP
-- [ ] Specialized role skills
+| Weeks | Focus | Skills |
+|-------|-------|--------|
+| 1-2 | Foundations | Arrays & HashMaps, Linked Lists, Binary Trees, Recursion, Stacks & Queues |
+| 3-4 | Core Design + Algorithms | URL Shortener, Database Architecture, Caching, Graphs, DP, Heaps |
+| 5-6 | Advanced Design | API Design, Rate Limiter, Message Queues, Microservices |
+| 7-8 | Senior/Staff Level | Uber, Twitter, Search Engine, Distributed Systems, Networking, Reliability |
 
-### Week 7+: Mock Interviews
-- [ ] Full mock interviews using combined skills
-- [ ] Behavioral practice
-- [ ] Resume review
+### Specialized Tracks
+
+| Track | Duration | Skills |
+|-------|----------|--------|
+| **Data Engineering** | 6 weeks | SQL Optimization → Pipeline Architect → Schema Design |
+| **DevOps / SRE** | 4 weeks | Kubernetes → CI/CD → Monitoring → Reliability |
+| **ML Engineer** | 4 weeks | Deep Learning → ML System Design |
+| **AI Product Manager** | 3 weeks | AI Product Strategy → Prompt Engineering → Responsible AI |
+| **Debugging** | 3 weeks | Broken API, Slow DB, Memory Leak, Cascading Failure, Data Inconsistency, Deployment Rollback |
 
 ---
 
