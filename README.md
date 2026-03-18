@@ -41,11 +41,11 @@ We created The Mentor because we believe interview preparation should be accessi
 Download the latest release as a ZIP file:
 
 ```bash
-curl -L https://github.com/ps06756/The-Mentor/archive/refs/tags/v1.0.0.zip -o The-Mentor.zip
+curl -L https://github.com/ps06756/The-Mentor/archive/refs/tags/v1.0.1.zip -o The-Mentor.zip
 unzip The-Mentor.zip
 ```
 
-Or manually download from: [https://github.com/ps06756/The-Mentor/archive/refs/tags/v1.0.0.zip](https://github.com/ps06756/The-Interview-Mentor/archive/refs/tags/v1.0.1.zip)
+Or manually download from: [https://github.com/ps06756/The-Mentor/archive/refs/tags/v1.0.1.zip](https://github.com/ps06756/The-Interview-Mentor/archive/refs/tags/v1.0.1.zip)
 
 ### Step 2: Install in Claude Code
 
@@ -94,7 +94,7 @@ Each skill is a markdown file with clear instructions. Copy the content and past
 
 | Skill | Topic | Difficulty | Description |
 |-------|-------|------------|-------------|
-| [Arrays & HashMaps](./agents/swe-i/arrays-hashmaps-interviewer.md) | Data Structures | Easy-Medium | Two pointers, sliding window, frequency counting |
+| [Arrays & HashMaps](https://github.com/ps06756/The-Interview-Mentor/tree/main/agents/swe-i/arrays-hashmaps-interviewer) | Data Structures | Easy-Medium | Two pointers, sliding window, frequency counting |
 | Linked Lists | Data Structures | Easy | Reversal, merging, cycle detection |
 | Binary Trees | Trees | Easy-Medium | Traversals, BFS/DFS, basic operations |
 | Recursion Basics | Algorithms | Easy | Base cases, call stacks, simple problems |
@@ -103,8 +103,8 @@ Each skill is a markdown file with clear instructions. Copy the content and past
 
 | Skill | Topic | Difficulty | Description |
 |-------|-------|------------|-------------|
-| [URL Shortener](./agents/systems-design/url-shortener-interviewer.md) | System Design | Medium | Distributed systems, scaling, trade-offs |
-| [Rate Limiter](./agents/systems-design/rate-limiter-interviewer.md) | System Design | Medium | Token bucket, sliding window, Redis |
+| [URL Shortener](https://github.com/ps06756/The-Interview-Mentor/tree/main/agents/systems-design/url-shortener-interviewer) | System Design | Medium | Distributed systems, scaling, trade-offs |
+| [Rate Limiter](https://github.com/ps06756/The-Interview-Mentor/tree/main/agents/systems-design/rate-limiter-interviewer) | System Design | Medium | Token bucket, sliding window, Redis |
 | Graph Algorithms | Algorithms | Medium | BFS, DFS, Dijkstra, topological sort |
 | Dynamic Programming | Algorithms | Medium-Hard | Memoization, tabulation, common patterns |
 
@@ -114,9 +114,9 @@ Each skill is a markdown file with clear instructions. Copy the content and past
 
 | Skill | Topic | Difficulty | Description |
 |-------|-------|------------|-------------|
-| [SQL Optimization](./agents/data-engineer/sql-optimization-interviewer.md) | Database | Medium-Hard | Indexing, query plans, schema design |
-| [Pipeline Architect](./agents/data-engineer/pipeline-architect-interviewer.md) | Data Engineering | Medium-Hard | End-to-end pipelines, Kafka/Flink, scaling, failure modes |
-| [Schema Design](./agents/data-engineer/schema-design-interviewer.md) | Data Engineering | Medium-Hard | Dimensional modeling, SCDs, star schema, query optimization |
+| [SQL Optimization](https://github.com/ps06756/The-Interview-Mentor/tree/main/agents/data-engineer/sql-optimization-interviewer) | Database | Medium-Hard | Indexing, query plans, schema design |
+| [Pipeline Architect](https://github.com/ps06756/The-Interview-Mentor/tree/main/agents/data-engineer/pipeline-architect-interviewer) | Data Engineering | Medium-Hard | End-to-end pipelines, Kafka/Flink, scaling, failure modes |
+| [Schema Design](https://github.com/ps06756/The-Interview-Mentor/tree/main/agents/data-engineer/schema-design-interviewer) | Data Engineering | Medium-Hard | Dimensional modeling, SCDs, star schema, query optimization |
 | Data Pipeline Design | Data Engineering | Medium | ETL/ELT, Apache Airflow, data quality |
 | Data Modeling | Data Engineering | Medium | Star schema, snowflake, data warehouses |
 
@@ -124,19 +124,19 @@ Each skill is a markdown file with clear instructions. Copy the content and past
 
 | Skill | Topic | Difficulty | Description |
 |-------|-------|------------|-------------|
-| [Database Architecture](./agents/systems-design/database-architecture-interviewer.md) | Databases | Medium-Hard | SQL vs NoSQL, Indexing, ACID, Sharding |
-| [Microservices Architecture](./agents/systems-design/microservices-architecture-interviewer.md) | Architecture | Medium-Hard | DDD, API Gateways, Sagas, Resilience |
-| [Distributed Systems Core](./agents/systems-design/distributed-systems-interviewer.md) | Dist. Systems | Hard | CAP Theorem, Quorums, Consensus, Clocks |
-| [Caching Architecture](./agents/systems-design/caching-architecture-interviewer.md) | Caching | Medium-Hard | Topologies, Eviction, Consistency, Stampedes |
-| [Message Queues](./agents/systems-design/message-queues-interviewer.md) | Messaging | Medium-Hard | Kafka vs RabbitMQ, DLQs, Idempotency, Ordering |
-| [API Design & Gateways](./agents/systems-design/api-design-interviewer.md) | API Design | Medium | REST, Pagination, Auth, API Gateways |
-| [Networking & Load Balancing](./agents/systems-design/networking-load-balancing-interviewer.md) | Networking | Medium-Hard | OSI Layers, L4/L7 LBs, TLS, Consistent Hashing |
+| [Database Architecture](https://github.com/ps06756/The-Interview-Mentor/tree/main/agents/systems-design/database-architecture-interviewer) | Databases | Medium-Hard | SQL vs NoSQL, Indexing, ACID, Sharding |
+| [Microservices Architecture](https://github.com/ps06756/The-Interview-Mentor/tree/main/agents/systems-design/microservices-architecture-interviewer) | Architecture | Medium-Hard | DDD, API Gateways, Sagas, Resilience |
+| [Distributed Systems Core](https://github.com/ps06756/The-Interview-Mentor/tree/main/agents/systems-design/distributed-systems-interviewer) | Dist. Systems | Hard | CAP Theorem, Quorums, Consensus, Clocks |
+| [Caching Architecture](https://github.com/ps06756/The-Interview-Mentor/tree/main/agents/systems-design/caching-architecture-interviewer) | Caching | Medium-Hard | Topologies, Eviction, Consistency, Stampedes |
+| [Message Queues](https://github.com/ps06756/The-Interview-Mentor/tree/main/agents/systems-design/message-queues-interviewer) | Messaging | Medium-Hard | Kafka vs RabbitMQ, DLQs, Idempotency, Ordering |
+| [API Design & Gateways](https://github.com/ps06756/The-Interview-Mentor/tree/main/agents/systems-design/api-design-interviewer) | API Design | Medium | REST, Pagination, Auth, API Gateways |
+| [Networking & Load Balancing](https://github.com/ps06756/The-Interview-Mentor/tree/main/agents/systems-design/networking-load-balancing-interviewer) | Networking | Medium-Hard | OSI Layers, L4/L7 LBs, TLS, Consistent Hashing |
 
 #### DevOps / SRE
 
 | Skill | Topic | Difficulty | Description |
 |-------|-------|------------|-------------|
-| [Reliability & Observability](./agents/systems-design/reliability-observability-interviewer.md) | Reliability | Medium-Hard | Circuit Breakers, RED Metrics, RTO/RPO, Retries |
+| [Reliability & Observability](https://github.com/ps06756/The-Interview-Mentor/tree/main/agents/systems-design/reliability-observability-interviewer) | Reliability | Medium-Hard | Circuit Breakers, RED Metrics, RTO/RPO, Retries |
 | Kubernetes Fundamentals | Infrastructure | Medium | Pods, services, deployments |
 | CI/CD Pipeline Design | DevOps | Medium | GitHub Actions, Jenkins, testing strategies |
 | Monitoring & Alerting | SRE | Medium | Prometheus, Grafana, SLIs/SLOs/SLAs |
@@ -153,7 +153,7 @@ Each skill is a markdown file with clear instructions. Copy the content and past
 | Skill | Topic | Difficulty | Description |
 |-------|-------|------------|-------------|
 | Design Twitter/X | System Design | Hard | Feed generation, fan-out, consistency |
-| [Design Uber](./agents/systems-design/uber-interviewer.md) | System Design | Hard | Real-time tracking, matching, maps |
+| [Design Uber](https://github.com/ps06756/The-Interview-Mentor/tree/main/agents/systems-design/uber-interviewer) | System Design | Hard | Real-time tracking, matching, maps |
 | Design a Search Engine | System Design | Hard | Indexing, ranking, query understanding |
 | Leadership Principles | Behavioral | All Levels | STAR method, cross-functional collaboration |
 
