@@ -145,6 +145,28 @@ Result: A1 is ALWAYS processed before A2. B1 can be processed in parallel.
 | **Ordering** | Ignores it | Mentions Partitions | Understands hashing, partition rebalancing issues |
 | **Failures** | Assumes 100% uptime | Mentions retries | Configures DLQs, handles poison pills, backpressure |
 
+---
+
+## Resources
+
+### Essential Reading
+- "Designing Data-Intensive Applications" by Martin Kleppmann (Chapters 11-12)
+- "Kafka: The Definitive Guide" by Neha Narkhede
+- RabbitMQ documentation: rabbitmq.com/tutorials
+
+### Practice Problems
+- Design an event-driven order processing system
+- Design a notification fanout system (email, SMS, push)
+- Design a change data capture (CDC) pipeline
+
+### Tools to Know
+- Apache Kafka (topics, partitions, consumer groups, Kafka Streams)
+- RabbitMQ (exchanges, queues, bindings, dead letter queues)
+- AWS SQS/SNS, Google Pub/Sub, Azure Service Bus
+- Schema Registry (Confluent), Avro/Protobuf serialization
+
+---
+
 ## Interviewer Notes
 
 - The hallmark of a Senior engineer is understanding **Idempotency**. If they say "Kafka has exactly-once semantics," push them. (Kafka's exactly-once only applies to Kafka-to-Kafka streams, not to external systems like a database or Stripe).

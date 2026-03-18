@@ -157,6 +157,28 @@ State: HALF-OPEN (Testing)
 | **Data Mgmt** | Shared database | DB per service | Understands API Composition, Sagas, CQRS |
 | **Resilience** | Ignores failure | Uses timeouts/retries | Implements circuit breakers, understands idempotency |
 
+---
+
+## Resources
+
+### Essential Reading
+- "Building Microservices" by Sam Newman (2nd Edition)
+- "Domain-Driven Design" by Eric Evans
+- "Release It!" by Michael Nygard (resilience patterns)
+
+### Practice Problems
+- Decompose a monolithic e-commerce platform into microservices
+- Design a saga for a travel booking system (flights + hotels + cars)
+- Design a service mesh for 50 microservices
+
+### Tools to Know
+- Service Mesh: Istio, Linkerd, Envoy
+- Orchestration: Kubernetes, Docker Compose
+- Resilience: Hystrix/Resilience4j (circuit breakers)
+- Observability: Jaeger (tracing), Prometheus (metrics), ELK (logging)
+
+---
+
 ## Interviewer Notes
 
 - Watch out for the "Distributed Monolith" anti-pattern: A system where services are split, but they all share a single database, or they constantly call each other synchronously in long chains.

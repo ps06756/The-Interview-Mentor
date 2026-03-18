@@ -142,6 +142,28 @@ Time | Transaction A                    | Transaction B
 | **Scaling** | Vertical scaling | Master-Slave replication | Sharding, Consistent Hashing, CAP theorem application |
 | **Data Modeling** | Everything normalized | Uses basic denormalization | Optimizes model for specific query access paths |
 
+---
+
+## Resources
+
+### Essential Reading
+- "Designing Data-Intensive Applications" by Martin Kleppmann (Chapters 2, 3, 5, 7)
+- "Database Internals" by Alex Petrov
+- Use The Index, Luke (use-the-index-luke.com)
+
+### Practice Problems
+- Design a global leaderboard system (Redis vs SQL trade-offs)
+- Design a time-series metrics store (LSM vs B-Tree)
+- Migrate a monolith database to microservices databases
+
+### Tools to Know
+- EXPLAIN / EXPLAIN ANALYZE (PostgreSQL, MySQL)
+- pg_stat_statements, pgBouncer
+- Vitess (MySQL sharding), Citus (PostgreSQL sharding)
+- CockroachDB, TiDB (distributed SQL)
+
+---
+
 ## Interviewer Notes
 
 - Push candidates on "Why?". If they say "I'd use Cassandra," ask "Why Cassandra instead of MongoDB or Postgres for this specific workload?"

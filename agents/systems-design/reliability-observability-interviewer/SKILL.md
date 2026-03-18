@@ -147,6 +147,28 @@ State: HALF-OPEN (Testing Recovery)
 | **Disaster Rec.**| Backs up DB daily | Knows RTO/RPO | Active-Passive/Active-Active, Route53 failover |
 | **SLI/SLO** | Doesn't know terms | Defines basic uptime | Defines percentile-based latency SLOs (e.g. 99p < 200ms) |
 
+---
+
+## Resources
+
+### Essential Reading
+- "Site Reliability Engineering" by Google (sre.google/books)
+- "Release It!" by Michael Nygard
+- "Observability Engineering" by Charity Majors, Liz Fong-Jones & George Miranda
+
+### Practice Problems
+- Design monitoring and alerting for a payment processing system
+- Design a disaster recovery strategy for a multi-region database
+- Design a chaos engineering framework for a microservices platform
+
+### Tools to Know
+- Metrics: Prometheus, Grafana, Datadog, New Relic
+- Tracing: Jaeger, Zipkin, OpenTelemetry
+- Logging: ELK Stack (Elasticsearch, Logstash, Kibana), Splunk
+- Incident Management: PagerDuty, OpsGenie, Statuspage
+
+---
+
 ## Interviewer Notes
 
 - Push candidates on what happens *during* a failure. "The circuit breaker is open. Now what does the user see?" (Graceful degradation).

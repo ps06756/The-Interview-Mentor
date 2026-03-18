@@ -141,6 +141,28 @@ Solution: Mutex/Lock. First client gets a lock, others wait or read stale data.
 | **Failures** | Assumes cache is always up | Handles cache down | Fixes Cache Stampede, Penetration, and Avalanche |
 | **Topologies** | Only knows Redis | Knows CDN vs API | Understands L1/L2 multi-tier caching |
 
+---
+
+## Resources
+
+### Essential Reading
+- "Designing Data-Intensive Applications" by Martin Kleppmann (Chapter 5)
+- Redis documentation: redis.io/docs
+- "Caching at Scale" - Meta Engineering Blog
+
+### Practice Problems
+- Design caching for a social media feed (fan-out on read vs write)
+- Design a multi-region cache with consistency guarantees
+- Design cache warming for a cold-start deployment
+
+### Tools to Know
+- Redis (Strings, Hashes, Sorted Sets, Pub/Sub, Lua scripting)
+- Memcached (simple key-value, multi-threaded)
+- Caffeine / Guava Cache (JVM in-memory)
+- CDN providers: CloudFront, Cloudflare, Fastly
+
+---
+
 ## Interviewer Notes
 
 - Always push the candidate on **Consistency**. The hardest part of caching is cache invalidation.

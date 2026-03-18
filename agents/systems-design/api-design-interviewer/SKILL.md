@@ -148,6 +148,28 @@ UserClient.GetUser(new UserRequest { Id = 123 })
 | **Architecture**| Direct client-to-microservice | Uses API Gateway | Understands BFF pattern and GraphQL tradeoffs |
 | **Security** | Sends passwords in clear | Knows JWT/OAuth basics | Understands token lifecycle, scopes, BOLA prevention |
 
+---
+
+## Resources
+
+### Essential Reading
+- "RESTful Web APIs" by Leonard Richardson & Mike Amundsen
+- Google API Design Guide (cloud.google.com/apis/design)
+- "GraphQL in Action" by Samer Buna
+
+### Practice Problems
+- Design the API for a ride-sharing app (Uber)
+- Design a paginated search API with faceted filtering
+- Design a webhook delivery system with retry logic
+
+### Tools to Know
+- Swagger / OpenAPI Specification
+- Postman, Insomnia (API testing)
+- Kong, Envoy, AWS API Gateway (API Gateways)
+- GraphQL: Apollo Server, Relay
+
+---
+
 ## Interviewer Notes
 
 - Watch out for candidates who use `POST` for everything.

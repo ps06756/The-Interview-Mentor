@@ -145,6 +145,28 @@ Client                                     Server
 | **High Availability**| Ignores LB failure | Mentions DNS Failover | Understands Anycast, VIPs, BGP, VRRP/Keepalived |
 | **Protocols** | HTTP only | Knows WebSockets | Understands HTTP/2 multiplexing, UDP vs TCP tradeoffs |
 
+---
+
+## Resources
+
+### Essential Reading
+- "Computer Networking: A Top-Down Approach" by Kurose & Ross
+- "High Performance Browser Networking" by Ilya Grigorik (hpbn.co)
+- Cloudflare Learning Center (cloudflare.com/learning)
+
+### Practice Problems
+- Design the network architecture for a CDN
+- Design a global load balancing strategy for a multi-region app
+- Design a WebSocket gateway for a real-time collaboration tool
+
+### Tools to Know
+- Load Balancers: Nginx, HAProxy, AWS ALB/NLB, Envoy
+- DNS: Route 53, Cloudflare DNS, dig/nslookup
+- TLS: Let's Encrypt, cert-manager, mTLS with Istio
+- Monitoring: tcpdump, Wireshark, traceroute, mtr
+
+---
+
 ## Interviewer Notes
 
 - Push candidates on the concept of **TLS Termination**. If they are doing L7 routing, the LB *must* decrypt the traffic. Ask them about the CPU overhead of this and whether they re-encrypt the traffic before sending it to the backend servers within the VPC.
