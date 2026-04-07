@@ -30,7 +30,7 @@ A collection of specialized AI skills for Claude Code and other agentic solution
 Clone the repository:
 
 ```bash
-git clone https://github.com/ps06756/The-Mentor.git
+git clone https://github.com/PrepLabsAI/InterviewMentor.git
 ```
 
 Or download the ZIP manually from GitHub.
