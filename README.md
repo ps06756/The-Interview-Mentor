@@ -95,6 +95,7 @@ Each skill is a markdown file with clear instructions. Copy the content of any [
 | Skill | Topic | Difficulty | Description |
 |-------|-------|------------|-------------|
 | [SQL Optimization](./agents/data-engineer/sql-optimization-interviewer/SKILL.md) | Database | Medium-Hard | EXPLAIN plans, composite indexes, partitioning |
+| [MySQL Performance](./agents/data-engineer/mysql-performance-interviewer/SKILL.md) | MySQL / InnoDB | Medium-Hard | ESR indexing rule, InnoDB locking, connection pools, batch safety |
 | [Pipeline Architect](./agents/data-engineer/pipeline-architect-interviewer/SKILL.md) | Data Engineering | Medium-Hard | Kafka/Flink, Airflow DAGs, exactly-once, late arrivals |
 | [Schema Design](./agents/data-engineer/schema-design-interviewer/SKILL.md) | Data Engineering | Medium-Hard | Star schemas, SCDs, grain, lakehouse architecture |
 
