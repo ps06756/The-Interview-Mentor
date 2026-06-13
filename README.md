@@ -25,6 +25,12 @@ A collection of specialized AI skills for Claude Code and other agentic solution
 
 ## 🚀 Quick Start
 
+### Try It Online (No Setup)
+
+[![Try The Interview Mentor on Socialistic](https://socialistic.ai/api/embed/interview-mentor-57d074?lang=en)](https://socialistic.ai/en/skill/interview-mentor-57d074?utm_source=github&utm_medium=readme&utm_campaign=20260612-summer-interview-resume-skill-builders&utm_content=badge)
+
+[Start a mock interview here](https://socialistic.ai/en/skill/interview-mentor-57d074?utm_source=github&utm_medium=readme&utm_campaign=20250612-summer-interview-resume-skill-builders&utm_content=hyperlink) -- pick a topic and go, no install required.
+
 ### Step 1: Download the Repository
 
 Clone the repository:
